@@ -1,0 +1,23 @@
+#loading-animation {
+    z-index: 999;
+    position: fixed;
+    font-size: clamp(70px, 10vw, 150px);
+    font-family: Honk, 'Times New Roman', Times, serif;
+
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.15s ease;
+}
+
+#loading-cover {
+
+    display: none; /* remove for loading animation */ 
+
+    position: fixed;
+    z-index: 998;
+    background-color: var(--reloadAnimationBgc);
+    width: 100%;
+    height: 100%;
+
+    transition: opacity 0.3s ease-in;
+}
+
+

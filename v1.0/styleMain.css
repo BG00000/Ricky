@@ -1,0 +1,27 @@
+:root.standardTheme {
+    --reloadAnimationBgc: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    height: 100vh;
+}
+
+#content-area {
+    background-color: rgb(255, 203, 203);
+    height: 100%;
+    width: 100%;
+}
+
+#top-bar-area {
+    background-color: lightcyan;
+}
