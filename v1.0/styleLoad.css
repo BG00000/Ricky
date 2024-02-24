@@ -8,8 +8,7 @@
 }
 
 #loading-cover {
-
-    display: none; /* remove for loading animation */ 
+    display: none;
 
     position: fixed;
     z-index: 998;

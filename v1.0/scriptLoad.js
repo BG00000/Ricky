@@ -6,6 +6,8 @@
 //     let array = []
 //     let loadWord = 'Ricky.'
 
+//     loadingCover.style.backgroundColor = 'black'
+
 //     for(let i = 0; i < loadWord.length; i++) {
 //         array.push(loadWord[i])
 //     }

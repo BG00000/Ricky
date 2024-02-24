@@ -1,5 +1,7 @@
-:root.standardTheme {
-    --reloadAnimationBgc: rgb(255, 255, 255);
+:root {
+    --mainContent: rgb(44, 44, 44);
+    --navBarBgc: rgb(60, 60, 60);
+    --navText: rgb(255, 255, 255);
 }
 
 * {
@@ -14,14 +16,94 @@ body {
     align-items: center;
     word-wrap: break-word;
     height: 100vh;
+    background-color: var(--mainContent);
 }
 
 #content-area {
-    background-color: rgb(255, 203, 203);
+    background-color: var(--mainContent);
     height: 100%;
-    width: 100%;
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
 }
 
-#top-bar-area {
-    background-color: lightcyan;
+#nav-bar-area {
+    background-color: var(--navBarBgc);
+    display: flex;
+    min-height: 40px;
+    justify-content: center;
+    padding: 0px 15px 0px 15px;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    flex: 1;
+    color: var(--navText);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-bar div {
+    display: flex;
+    flex: 1;
+}
+
+#right-box {
+    justify-content: end;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#left-box {
+    display: flex;
+    justify-content: start;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+#burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-width: 25px;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#burger-menu div {
+    background-color: rgb(255, 255, 255);
+    max-height: 1px;
+}
+
+#right-box button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#right-box button:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+#main-content {
+    max-width: 1500px;
+    width: 100%;
+    background-color: rgb(77, 77, 77);
+}
+
+#main-content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
