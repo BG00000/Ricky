@@ -1,55 +1,21 @@
 
-//I generate the buttons here since I struggled to make them responsive to screen size changes in the way I wanted with them in html
+// I just wrote this to make my CSS look more clean ;)
 
+const exploreButtonColors = [
+    '#ff593f',
+    '#ff753f',
+    '#ff9f3f',
+    '#B3D885',
+    '#88D798',
+    '#5DD5AB',
+    '#3CDBD3',
+    '#1EEDE4',
+    '#00FFF5'
+]
 
+const exploreBarBottom = document.getElementById('explore-bar-bottom')
+const exploreBarButtons = exploreBarBottom.querySelectorAll('button')
 
-function resizeFn() {
-
-    const targetVW = [900, 800, 700, 600, 500, 400]
-
-    let j = 0
-
-    const exploreButtonNames = ['About Ricky', 'Naughty & Nice', 'Fashion', 'Vitals', 'Likes & Dislikes', 'Gallery', 'Interview', 'Pedigree', 'Friends']
-
-    const exploreButtonColors = [
-        '#b8ff7d',
-        '#b8ff7d',
-        '#b8ff7d',
-        '#7dffc2',
-        '#b8ff7d',
-        '#b8ff7d',
-        '#b8ff7d',
-        '#b8ff7d',
-        '#7dffc2'
-    ]
-    
-    for (let i = 0; i <= 8; i++) {
-
-        const exploreBarBottom = document.getElementById('explore-bar-bottom')
-    
-        const exploreBarButtons = document.createElement('button')
-        exploreBarButtons.id = i
-        exploreBarButtons.innerText = exploreButtonNames[i]
-        exploreBarButtons.style.backgroundColor = exploreButtonColors[i]
-        exploreBarBottom.appendChild(exploreBarButtons)
-    
-        if (window.innerWidth <= targetVW[j]) {
-            
-        }
-
-        .style.backgroundColor = 
-    }
-
-}
-
-window.addEventListener('resize', resizeFn, true)
-
-resizeFn()
-
-
-
-
-
-
-
-
+exploreBarButtons.forEach((element, index) => {
+    element.style.backgroundColor = exploreButtonColors[index]
+})

@@ -1,3 +1,6 @@
+// //--->disable scroll for animation duration!!<------
+
+
 // window.onload = () => { //loading animation
 
 //     const loadingAnimation = document.getElementById('loading-animation')
