@@ -2,15 +2,15 @@
 // I just wrote this to make my CSS look more clean ;)
 
 const exploreButtonColors = [
-    '#b8ff7d',
-    '#b8ff7d',
-    '#b8ff7d',
-    '#7dffc2',
-    '#b8ff7d',
-    '#b8ff7d',
-    '#b8ff7d',
-    '#b8ff7d',
-    '#7dffc2'
+    '#ff593f',
+    '#ff753f',
+    '#ff9f3f',
+    '#B3D885',
+    '#88D798',
+    '#5DD5AB',
+    '#3CDBD3',
+    '#1EEDE4',
+    '#00FFF5'
 ]
 
 const exploreBarBottom = document.getElementById('explore-bar-bottom')

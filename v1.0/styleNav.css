@@ -41,7 +41,7 @@
 
 #explore-bar-bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(127px, 1fr));
     overflow: hidden;
     max-height: 26px;
 
@@ -52,10 +52,12 @@
 
 #explore-bar-bottom button {
     padding: 5px 15px; 
-    border: 1px solid rgb(207, 207, 207);
+    border: none;
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
 }
 
 #right-box {

@@ -8,7 +8,7 @@
 }
 
 #loading-cover {
-    display: none;
+    /* display: none; */
 
     position: fixed;
     z-index: 998;

@@ -1,46 +1,49 @@
-// window.onload = () => { //loading animation
+//--->disable scroll for animation duration!!<------
 
-//     const loadingAnimation = document.getElementById('loading-animation')
-//     const loadingCover = document.getElementById('loading-cover')
 
-//     let array = []
-//     let loadWord = 'Ricky.'
+window.onload = () => { //loading animation
 
-//     loadingCover.style.backgroundColor = 'white'
+    const loadingAnimation = document.getElementById('loading-animation')
+    const loadingCover = document.getElementById('loading-cover')
 
-//     for(let i = 0; i < loadWord.length; i++) {
-//         array.push(loadWord[i])
-//     }
+    let array = []
+    let loadWord = 'Ricky.'
 
-//     function animateTyping () {
-//         array.forEach((element, index) => {
-//             let interval = 100
-//             setTimeout(() => {
-//                 loadingAnimation.innerText += element
-//             }, index * interval)
-//         })
-//     }
+    loadingCover.style.backgroundColor = 'white'
 
-//     setTimeout(animateTyping, 80)
+    for(let i = 0; i < loadWord.length; i++) {
+        array.push(loadWord[i])
+    }
 
-//     function animateJump() {
-//         loadingAnimation.style.transform = "translateY(-200px)"
-//     }
+    function animateTyping () {
+        array.forEach((element, index) => {
+            let interval = 100
+            setTimeout(() => {
+                loadingAnimation.innerText += element
+            }, index * interval)
+        })
+    }
 
-//     setTimeout(animateJump, 400)
+    setTimeout(animateTyping, 80)
 
-//     function finishAnimation() {
-//         loadingAnimation.style.transform = "translateY(-400px)"
-//         loadingAnimation.style.opacity = '0' 
-//         loadingCover.style.opacity = '0'
-//     }
+    function animateJump() {
+        loadingAnimation.style.transform = "translateY(-200px)"
+    }
 
-//     setTimeout(finishAnimation, 1000)
+    setTimeout(animateJump, 400)
 
-//     function removeCover () {
-//         loadingCover.style.display = 'none'
-//     }
+    function finishAnimation() {
+        loadingAnimation.style.transform = "translateY(-400px)"
+        loadingAnimation.style.opacity = '0' 
+        loadingCover.style.opacity = '0'
+    }
 
-//     setTimeout(removeCover, 1300)
-// }
+    setTimeout(finishAnimation, 1000)
+
+    function removeCover () {
+        loadingCover.style.display = 'none'
+    }
+
+    setTimeout(removeCover, 1300)
+}
 
