@@ -1,0 +1,21 @@
+:root {
+    --mainContent: rgb(255, 255, 255);
+    --navBarBgc: rgb(255, 255, 255);
+    --navText: rgb(27, 27, 27);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    height: 100vh;
+    background-color: var(--mainContent);
+    padding-bottom: 2000px;
+}
