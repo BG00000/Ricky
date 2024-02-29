@@ -1,2 +1,2 @@
 # Ricky
-Ricky.
+Ricky. 
