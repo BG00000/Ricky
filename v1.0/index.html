@@ -12,7 +12,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <!-- fonts -->
 </head>
 <body>
@@ -25,11 +25,11 @@
         <div id="nav-bar-area">
             <div id="nav-bar">
                 <div id="left-box">
-                    <div id="burger-menu">
+                    <!-- <div id="burger-menu">
                         <div></div>
                         <div></div>
                         <div></div>
-                    </div>
+                    </div> -->
                     <p>Ricky.</p>
                 </div>
                 <div id="right-box">
@@ -37,6 +37,7 @@
                         <li><a href="#">About</a></li>
                         <li><a href="#">Donate</a></li>
                         <li><a href="#">Contact</a></li>
+                        <li><a href="#">Review</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,18 +45,55 @@
 
         <!-- maybe change to a W3Schools nav bar design -->
 
+        <!-- to do:
+        
+        make the explore bar more interactive and make it so that the buttons 
+        can be cycled with arrows on either side (js)
+
+        button IDs are redundant now
+        chnage ID from bottom
+        
+        -->
+
         <div id="explore-bar-area">
+
+            <button id="explore-pill">
+                Explore
+            </button>
+
             <div id="explore-bar-bottom">
-                <button id="EXbutton-1">About Ricky</button >
-                <button id="EXbutton-2">Naughty & Nice</button>
-                <button id="EXbutton-3">Likes & Dislikes</button>
-                <button id="EXbutton-4">Fashion</button>
-                <button id="EXbutton-5">Vitals</button>
-                <button id="EXbutton-6">Gallery</button>
-                <button id="EXbutton-7">Interview</button>
-                <button id="EXbutton-8">Pedigree</button>
-                <button id="EXbutton-9">Friends</button>
+                <button id="about-ricky-btn" class="nav-hover-element"><a href="#">About Ricky</a></button >
+                <button id="#"><a href="#" class="nav-hover-element">Naughty & Nice</a></button>
+                <button id="#"><a href="#" class="nav-hover-element">Likes & Dislikes</a></button>
+                <button id="#"><a href="#" class="nav-hover-element">Fashion</a></button>
+                <button id="#"><a href="#" class="nav-hover-element">Vitals</a></button>
+                <button id="#"><a href="#" class="nav-hover-element">Gallery</a></button>
+                <button id="#"><a href="#" class="nav-hover-element">Interview</a></button>
+                <button id="#"><a href="#" class="nav-hover-element">Pedigree</a></button>
+                <button id="#"><a href="#" class="nav-hover-element">Friends</a></button>
             </div>
+
+            <div class="explore-expand">
+                <div id="expand-about-ricky" class="explore-expand-inner" class="nav-hover-element">
+                  <div>
+                    <p>About Ricky.</p>
+                  </div>
+                  <div>
+                    Explore everything about <span class="emph_1">Ricky</span> and how he came to be.
+                  </div>
+                </div>
+
+                <div id="expand-naughty-and-nice" class="explore-expand-inner" class="nav-hover-element">
+                    <div>
+                      <p>Naughty & Nice</p>
+                    </div>
+                    <div>
+                      Explore whether <span class="emph_1">Ricky</span> is getting presents from Santa this year
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -63,7 +101,7 @@
             <div id="body-area-mw">
                 <div id="main-content-box">
                     <div id="main-content">
-                        <p id="main-slogan">The ultimate website for all things Ricky.</p>
+                        <p id="main-slogan">The ultimate website for all things<span class="emph_1">&nbsp;Ricky.</span></p>
                     </div>
                 </div>
             </div>
