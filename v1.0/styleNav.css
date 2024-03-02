@@ -22,14 +22,13 @@
 #explore-bar-area {
     background-color: var(--navBarBgc);
     position: sticky;
-    top: 0px;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid var(--navBorder);
-    padding: 0px 15px;
+    padding: 0px 15px;  
 }
-
 
 
 #explore-bar-bottom {
@@ -38,6 +37,8 @@
     width: 100%;
     max-width: 1000px;
     min-height: 40px;
+
+    background-color: white;
 }
 
 
@@ -55,39 +56,36 @@
     transition: background-color 0.15s;
 }
 
-.explore-expand {
-    display: none;
-
+#explore-expand {
+    display: none; /*ensure display is none for drop down to work*/
     width: 100%;
     max-width: 1000px;
     padding: 10px;
+    z-index: -99;
+}
+
+.animate-expand {
+    transform: translateY(50px);
 }
 
 .explore-expand-inner {
-    display: none;
-    
+    display: none; /*ensure display is none for drop down to work*/
     gap: 20px;
     align-items: center;
 }
 
-.explore-expand div:first-child {
+#explore-expand div:first-child {
     font-size: 45px;
     color: var(--themeBlue);
     min-width: fit-content;
 }
 
-.explore-expand div:last-child {
+#explore-expand div:last-child {
     font-size: 20px;
     color: var(--navBorder);
     text-wrap: wrap;
 }
 
-
-
-#expand-naughty-and-nice,
-#expand-about-ricky {
-    display: none;
-}
 
 #explore-pill:hover {
     background-color: var(--themeBlue);
