@@ -7,7 +7,7 @@ function handleExploreExpand () {
     navHoverElements.forEach((element) => {
         element.addEventListener('mouseover', () => {
             exploreExpand.style.display = 'flex'
-
+    
             let testItem = document.getElementById(element.id + '-expand')
             testItem.style.display = 'flex'
 
@@ -19,6 +19,7 @@ function handleExploreExpand () {
         element.addEventListener('mouseout', () => {
             
             exploreExpand.style.display = 'none'
+
 
             let testItem = document.getElementById(element.id + '-expand')
             testItem.style.display = 'none'

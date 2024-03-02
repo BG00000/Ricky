@@ -37,8 +37,6 @@
     width: 100%;
     max-width: 1000px;
     min-height: 40px;
-
-    background-color: white;
 }
 
 
@@ -58,20 +56,18 @@
 
 #explore-expand {
     display: none; /*ensure display is none for drop down to work*/
+    align-items: center;
     width: 100%;
     max-width: 1000px;
     padding: 10px;
     z-index: -99;
 }
 
-.animate-expand {
-    transform: translateY(50px);
-}
 
 .explore-expand-inner {
     display: none; /*ensure display is none for drop down to work*/
     gap: 20px;
-    align-items: center;
+    align-items: baseline;
 }
 
 #explore-expand div:first-child {
@@ -82,7 +78,7 @@
 
 #explore-expand div:last-child {
     font-size: 20px;
-    color: var(--navBorder);
+    color: rgb(112, 112, 114); /*update colors to var()*/
     text-wrap: wrap;
 }
 
