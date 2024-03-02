@@ -26,34 +26,45 @@
 
 function handleExploreExpand () {
     const exploreExpand = document.querySelector('.explore-expand')
-    const expandAboutRicky = document.getElementById('expand-about-ricky')
+    const expandAboutRicky = document.getElementById('about-ricky-btn-expand')
+    const exploreBarArea = document.getElementById('explore-bar-area')
+    const expandNaughtAndNice = document.getElementById('naughty-and-nice-btn-expand')
+
+    const exploreExpandInner = document.querySelector('.explore-expand-inner')
 
     //buttons (hover)
 
     const aboutRickyBtn = document.getElementById('about-ricky-btn')
 
+    let navHoverElements = document.querySelectorAll('.nav-hover-element')
 
-    aboutRickyBtn.addEventListener('mouseover', () => {
-        exploreExpand.style.display = 'flex'
-        expandAboutRicky.style.display = 'flex'
+    //optimise expression repetition 
+
+    //handle mouse over event
+
+
+    navHoverElements.forEach((element) => {
+        element.addEventListener('mouseover', () => {
+            exploreExpand.style.display = 'flex'
+
+            let testItem = document.getElementById(element.id + '-expand')
+            testItem.style.display = 'flex'
+
+        })
     })
 
-    exploreExpand.addEventListener('mouseover', () => {
-        exploreExpand.style.display = 'flex'
-        expandAboutRicky.style.display = 'flex'
+    //handle mouse out event
+
+    navHoverElements.forEach((element) => {
+        element.addEventListener('mouseout', () => {
+            exploreExpand.style.display = 'none'
+
+            let testItem = document.getElementById(element.id + '-expand')
+            testItem.style.display = 'none'
+
+            //if mouse out of explore area AND element!!
+        })
     })
-
-    aboutRickyBtn.addEventListener('mouseout', () => {
-        exploreExpand.style.display = 'none'
-        expandAboutRicky.style.display = 'none'
-    })
-
-    exploreExpand.addEventListener('mouseout', () => {
-        exploreExpand.style.display = 'none'
-        expandAboutRicky.style.display = 'none'
-    })
-
-
 }
 
 handleExploreExpand()

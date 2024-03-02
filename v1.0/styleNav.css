@@ -64,7 +64,8 @@
 }
 
 .explore-expand-inner {
-    display: flex;
+    display: none;
+    
     gap: 20px;
     align-items: center;
 }
@@ -93,22 +94,26 @@
 }
 
 #explore-bar-bottom button a {
+    display: flex;
     text-decoration: none;
     color: var(--navText);
     font-size: 14px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 
     transition: color 0.15s;
 }
 
+#explore-bar-bottom button a:hover {
+    color: var(--themeBlue);
+}
+
 #explore-bar-bottom button {
-    padding: 5px; 
     border: none;
     background-color: transparent;
     cursor: pointer;
-}
-
-#explore-bar-bottom button a:hover {
-    color: var(--themeBlue);
 }
 
 #right-box {
