@@ -7,7 +7,6 @@
     border-bottom: 1px solid var(--navBorder);
 }
 
-/* #explore-bar-bottom, */
 #nav-bar {
     display: flex;
     align-items: center;
@@ -50,8 +49,6 @@
     width: 100%;
     border-radius: 50px;
     cursor: pointer;
-
-    transition: background-color 0.15s;
 }
 
 #explore-expand {
@@ -67,7 +64,7 @@
 .explore-expand-inner {
     display: none; /*ensure display is none for drop down to work*/
     gap: 20px;
-    align-items: baseline;
+    align-items: baseline;    
 }
 
 #explore-expand div:first-child {
