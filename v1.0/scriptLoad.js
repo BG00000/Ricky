@@ -42,6 +42,7 @@
 
 //     function removeCover () {
 //         loadingCover.style.display = 'none'
+//         loadingAnimation.style.display = 'none'
 //     }
 
 //     setTimeout(removeCover, 1300)

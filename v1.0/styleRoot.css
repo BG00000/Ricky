@@ -30,6 +30,10 @@ body {
     padding-bottom: 2000px;
 }
 
-.emph_1 {
+.emph_blue {
     color: var(--themeBlue);
+}
+
+.emph_white {
+    color: var(--mainContent);
 }
