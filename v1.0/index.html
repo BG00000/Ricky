@@ -12,8 +12,14 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <!-- fonts -->
+
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!--GSAP-->
+
 </head>
 <body>
     <p id="loading-animation"></p>
@@ -22,50 +28,159 @@
 
     <section id="content-area">
 
-        <div id="nav-bar-area">
-            <div id="nav-bar">
-                <div id="left-box">
-                    <div id="burger-menu">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <p>Ricky.</p>
-                </div>
-                <div id="right-box">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+    <section id="top-bar">
+      <div id="nav-bar-area">
+        <div id="nav-bar">
+            <div id="left-box">
+                <!-- <div id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+                <p>Ricky.</p>
             </div>
+            <div id="right-box">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Review</a></li>
+                </ul>
+            </div>
+      </div>
+  </div>
+
+    <!-- maybe change to a W3Schools nav bar design -->
+
+    <!-- to do:
+    
+    make the explore bar more interactive and make it so that the buttons 
+    can be cycled with arrows on either side (js)
+
+    button IDs are redundant now
+    chnage ID from bottom
+    
+    -->
+
+    <div id="explore-bar-area">
+
+        <button id="explore-pill">
+            Explore
+        </button>
+
+        <div id="explore-bar-bottom">
+            <button id="about-ricky-btn" class="nav-hover-element"><a href="#">About Ricky</a></button >
+            <button id="naughty-and-nice-btn" class="nav-hover-element"><a href="#" >Naughty & Nice</a></button>
+            <button id="likes-and-dislikes-btn" class="nav-hover-element"><a href="#" >Likes & Dislikes</a></button>
+            <button id="fashion-btn" class="nav-hover-element"><a href="#" >Fashion</a></button>
+            <button id="vitals-btn" class="nav-hover-element"><a href="#" >Vitals</a></button>
+            <button id="gallery-btn" class="nav-hover-element"><a href="#" >Gallery</a></button>
+            <button id="interview-btn" class="nav-hover-element"><a href="#" >Interview</a></button>
+            <button id="pedigree-btn" class="nav-hover-element"><a href="#" >Pedigree</a></button>
+            <button id="friends-btn" class="nav-hover-element"><a href="#" >Friends</a></button>
         </div>
 
-        <!-- maybe change to a W3Schools nav bar design -->
+        <!--the ultimate goal would be to make each category change color when hovered over
+            also change background color of explore-bar-area-->
 
-        <div id="explore-bar-area">
-            <div id="explore-bar-bottom">
-                <button id="EXbutton-1">About Ricky</button >
-                <button id="EXbutton-2">Naughty & Nice</button>
-                <button id="EXbutton-3">Likes & Dislikes</button>
-                <button id="EXbutton-4">Fashion</button>
-                <button id="EXbutton-5">Vitals</button>
-                <button id="EXbutton-6">Gallery</button>
-                <button id="EXbutton-7">Interview</button>
-                <button id="EXbutton-8">Pedigree</button>
-                <button id="EXbutton-9">Friends</button>
+        <div id="explore-expand">
+            <div id="about-ricky-btn-expand" class="explore-expand-inner">
+              <div>
+                <p>About Ricky.</p>
+              </div>
+              <div>
+                Explore everything about <span class="emph_1">Ricky</span> and how he came to be.
+              </div>
             </div>
+
+            <div id="naughty-and-nice-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Naughty & Nice</p>
+                </div>
+                <div>
+                  Explore whether <span class="emph_1">Ricky</span> is getting presents from Santa this year
+                </div>
+            </div>
+
+            <div id="likes-and-dislikes-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Likes & Dislikes</p>
+                </div>
+                <div>
+                  Explore <span class="emph_1">Ricky's</span> likes & dislikes
+                </div>
+            </div>
+
+            <div id="fashion-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Fashion</p>
+                </div>
+                <div>
+                  Explore <span class="emph_1">Ricky's</span> sense of fashion
+                </div>
+            </div>
+
+            <div id="vitals-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Vitals</p>
+                </div>
+                <div>
+                  Explore <span class="emph_1">Ricky's</span> heart beat, respiration rate, and more!
+                </div>
+            </div>
+
+            <div id="gallery-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Gallery</p>
+                </div>
+                <div>
+                  Explore a plethora of candid <span class="emph_1">Ricky</span> portraits
+                </div>
+            </div>
+
+            <div id="interview-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Interview</p>
+                </div>
+                <div>
+                  Does <span class="emph_1">Ricky</span> like his food cold or warm? Find out here
+                </div>
+            </div>
+
+            <div id="pedigree-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Pedigree</p>
+                </div>
+                <div>
+                  Does <span class="emph_1">Ricky</span> have a royal lineage?
+                </div>
+            </div>
+
+            <div id="friends-btn-expand" class="explore-expand-inner">
+                <div>
+                  <p>Friends</p>
+                </div>
+                <div>
+                  Explore <span class="emph_1">Ricky's</span> friends (not what you may expect)
+                </div>
+            </div>
+
         </div>
 
+    </div>
+    </section>
+
+
+
+<!--main content starts here - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
 
         <div id="body-area">
-            <div id="body-area-mw">
-                <div id="main-content-box">
-                    <div id="main-content">
-                        <p id="main-slogan">The ultimate website for all things Ricky.</p>
-                    </div>
-                </div>
+            <div class="landing-section" id="landing-slogan">
+              <p class="body-main-text">The website for all things<span class="emph_blue"> Ricky.</span></p>
+            </div>
+
+            <div class="landing-section" id="landing-meet-ricky">
+              <p class="body-main-text">Meet Ricky</p>
             </div>
         </div>
 
@@ -76,5 +191,9 @@
 
     <script src="scriptLoad.js"></script>
     <script src="scriptMain.js"></script>
+    <script src="GSAP.js"></script>
+
+
+
 </body>
 </html>

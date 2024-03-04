@@ -2,43 +2,42 @@
     background-color: var(--mainContent);
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
-
-#main-content {
-    background-color: var(--mainContent);
-    color: var(--navText);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#main-content-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-}
-
-#main-slogan {
-    display: flex;
-    justify-content: center;
-    font-size: clamp(22px, 4vw, 60px);
-    min-height: 100px;
-    align-items: center;
-    width: 100%;
-}
-
 
 #body-area {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
 }
 
-#body-area-mw {
-    max-width: 1000px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+.body-main-text {
+    font-size: clamp(22px, 6.5vw, 90px);
+    color: var(--navText);
+    font-weight: 500;
+
+
 }
+
+.landing-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#landing-slogan {
+    min-height: calc(100vh);
+}
+
+#landing-meet-ricky {
+    min-height: 600px;
+    background-color: var(--themeBlue);
+    background-image: linear-gradient(var(--themeBlue), rgb(202, 155, 210));
+}
+
+#landing-meet-ricky p {
+    color: white;
+}
+
 

@@ -1,21 +1,41 @@
+function handleExploreExpand () {
+    const exploreExpand = document.getElementById('explore-expand')
+    const navHoverElements = document.querySelectorAll('.nav-hover-element')
+    const exploreBarArea = document.getElementById('explore-bar-area')
 
-// I just wrote this to make my CSS look more clean ;)
+    //handle mouse over event
+    navHoverElements.forEach((element) => {
+        element.addEventListener('mouseover', () => {
+            exploreExpand.style.display = 'flex'
+    
+            let testItem = document.getElementById(element.id + '-expand')
+            testItem.style.display = 'flex'
 
-const exploreButtonColors = [
-    '#ff593f',
-    '#ff753f',
-    '#ff9f3f',
-    '#B3D885',
-    '#88D798',
-    '#5DD5AB',
-    '#3CDBD3',
-    '#1EEDE4',
-    '#00FFF5'
-]
+        })
+    })
 
-const exploreBarBottom = document.getElementById('explore-bar-bottom')
-const exploreBarButtons = exploreBarBottom.querySelectorAll('button')
+    //handle mouse out event
+    navHoverElements.forEach((element) => {
+        element.addEventListener('mouseout', () => {
+            
+            exploreExpand.style.display = 'none'
 
-exploreBarButtons.forEach((element, index) => {
-    element.style.backgroundColor = exploreButtonColors[index]
-})
+
+            let testItem = document.getElementById(element.id + '-expand')
+            testItem.style.display = 'none'
+
+            exploreExpand.onmouseover = () => {
+                exploreExpand.style.display = 'flex'
+                testItem.style.display = 'flex'
+            }
+
+            exploreExpand.onmouseout = () => {
+                exploreExpand.style.display = 'none'
+                testItem.style.display = 'none'
+                
+            }
+        })
+    })
+}
+
+handleExploreExpand()

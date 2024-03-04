@@ -1,7 +1,15 @@
 :root {
     --mainContent: rgb(255, 255, 255);
     --navBarBgc: rgb(255, 255, 255);
-    --navText: rgb(27, 27, 27);
+    --navText: rgb(29, 29, 31);
+    --navBorder: rgb(209, 209, 209);
+    --themeBlue: rgb(61, 135, 255);
+
+    --lightGrey1: rgb(245, 245, 245);
+
+    --maxWidth: 1200px;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* add different themes and a toggle */
@@ -20,4 +28,12 @@ body {
     height: 100vh;
     background-color: var(--mainContent);
     padding-bottom: 2000px;
+}
+
+.emph_blue {
+    color: var(--themeBlue);
+}
+
+.emph_white {
+    color: var(--mainContent);
 }

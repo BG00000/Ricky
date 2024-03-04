@@ -1,63 +1,128 @@
+#top-bar {
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(20px);
+}
+
+
+
+
 #nav-bar-area {
-    background-color: var(--navBarBgc);
+    /* background-color: var(--navBarBgc); */
+
+    background-color: rgba(255, 255, 255, 0.7);
+
     display: flex;
     min-height: 70px;
     justify-content: center;
     padding: 0px 15px 0px 15px;
-    border-bottom: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid var(--navBorder);
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    max-width: var(--maxWidth);
+    width: 100%;
+    flex: 1;
+    color: var(--navText); 
+
+    z-index: 1;
 }
 
 #explore-bar-area {
-    background-color: var(--navBarBgc);
+    /* background-color: var(--navBarBgc); */
+
+    background-color: rgba(255, 255, 255, 0.7);
+
+    top: 0;
     display: flex;
-    position: sticky;
-    top: 0px;
-    align-items: center;
     flex-direction: column;
-    padding: 10px 15px;
-    border-bottom: 1px solid rgb(209, 209, 209);
-}
-
-#nav-bar,
-#explore-bar-top,
-#explore-bar-bottom {
-    display: flex;
     align-items: center;
-    max-width: 1000px;
-    width: 100%;
-    flex: 1;
-    color: var(--navText);
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 99;
+    border-bottom: 1px solid var(--navBorder);
+    padding: 0px 15px;  
+
+    z-index: 1;
+
+
+    /* position: sticky; */
 }
 
-#explore-bar-top {
-    justify-content: center;
-    min-height: 50px;
-}
-
-/* I decided to take advantage of a sneaky grid property here*/
-/*I set a max-height value and ensure overflow is hidden to complete the effect!!*/
 
 #explore-bar-bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(127px, 1fr));
-    overflow: hidden;
-    max-height: 26px;
-
+    grid-template-columns: repeat(9, auto);
+    width: 100%;
     max-width: 1000px;
-    padding: 5px 0px 5px 0px;
-    gap: 10px;
+    min-height: 40px;
+}
+
+
+#explore-pill {
+    display: none;
+    background-color: var(--navText);
+    border: none;
+    color: white;
+    padding: 5px;
+    margin: 10px 0px;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#explore-expand {
+    display: none; /*ensure display is none for drop down to work*/
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+
+.explore-expand-inner {
+    display: none; /*ensure display is none for drop down to work*/
+    gap: 20px;
+    align-items: baseline;    
+}
+
+#explore-expand div:first-child {
+    font-size: 45px;
+    color: var(--themeBlue);
+    min-width: fit-content;
+}
+
+#explore-expand div:last-child {
+    font-size: 20px;
+    color: rgb(112, 112, 114); /*update colors to var()*/
+    text-wrap: wrap;
+}
+
+
+#explore-pill:hover {
+    background-color: var(--themeBlue);
+}
+
+#explore-bar-bottom button a {
+    display: flex;
+    text-decoration: none;
+    color: var(--navText);
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    transition: color 0.15s;
+}
+
+#explore-bar-bottom button a:hover {
+    color: var(--themeBlue);
 }
 
 #explore-bar-bottom button {
-    padding: 5px 15px; 
     border: none;
     background-color: transparent;
-    border-radius: 5px;
     cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 14px;
 }
 
 #right-box {
@@ -70,7 +135,14 @@
 
 #right-box ul li a{
     text-decoration: none;
+    font-size: 14px;
     color: rgb(0, 0, 0);
+
+    transition: color 0.15s;
+}
+
+#right-box ul li a:hover {
+    color: rgb(89, 89, 89);
 }
 
 #right-box ul li {
@@ -103,4 +175,14 @@
     background-color: var(--navText);
     height: 2px;
     width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    #explore-bar-bottom {
+        display: none;
+    }
+
+    #explore-pill {
+        display: inline;
+    }
 }
