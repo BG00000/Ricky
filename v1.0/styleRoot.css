@@ -27,7 +27,9 @@ body {
     word-wrap: break-word;
     height: 100vh;
     background-color: var(--mainContent);
-    padding-bottom: 2000px;
+    
+    
+    /* padding-bottom: 2000px; */
 }
 
 .emph_blue {
