@@ -23,15 +23,14 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-
 }
 
 #landing-slogan {
-    min-height: calc(100vh);
+    min-height: 100vh;
 }
 
 #landing-meet-ricky {
-    min-height: 600px;
+    min-height: 100vh;
     background-color: var(--themeBlue);
     background-image: linear-gradient(var(--themeBlue), rgb(202, 155, 210));
 }
