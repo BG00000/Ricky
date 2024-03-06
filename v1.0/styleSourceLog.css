@@ -9,9 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: var(--themeBlue);
-
+    background-color: var(--navBarBgc);
     overflow: hidden;
 }
 
@@ -19,7 +17,7 @@ table {
     border-collapse: collapse;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
-    background-color: rgba(255, 255, 255, 0.164);
+    background-color: rgba(255, 255, 255, 0.176);
 
     width: 80%;
     max-width: 1000px;
@@ -29,13 +27,15 @@ table {
 
 table tr th,
 table tr td {
-    border: 1px solid  white;
+    border: 1px solid  var(--navBorder);
     padding: 5px 20px;
-    color: white;
+    color: var(--navText);
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }   
 
 table tr:hover {
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(0, 0, 0, 0.033);
 }
 
 div {
@@ -47,4 +47,6 @@ div {
 
 div p {
     font-size: clamp(15px, 13vw, 1000px);
+    color: rgba(10, 48, 137, 0.264);
+    font-weight: 900;
 }

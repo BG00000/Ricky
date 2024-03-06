@@ -1,3 +1,7 @@
+body {
+    background-color: var(--mainContent);
+}
+
 #content-area {
     background-color: var(--mainContent);
     height: 100%;
@@ -37,4 +41,19 @@
 
 #landing-meet-ricky p {
     color: white;
+}
+
+#footer-area {
+    padding: 30px 0px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    max-width: 600px;
+}
+
+.footer-links {
+
 }
