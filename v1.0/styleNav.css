@@ -1,10 +1,12 @@
 #top-bar {
     width: 100%;
     position: fixed;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px); /*look into this compatability */
 }
 
-
+#header-cat-icon {
+    height: 40px; /* will porbs need white version */
+}
 
 
 #nav-bar-area {
@@ -159,6 +161,7 @@
     align-items: center;
     height: 100%;
     gap: 20px;
+    position: relative;
 }
 
 #burger-menu {
