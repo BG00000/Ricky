@@ -104,7 +104,7 @@
     background-color: var(--themeBlue);
 }
 
-#explore-bar-bottom button a {
+#explore-bar-bottom p a {
     display: flex;
     text-decoration: none;
     color: var(--navText);
@@ -113,18 +113,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-
     transition: color 0.15s;
-}
-
-#explore-bar-bottom button a:hover {
-    color: var(--themeBlue);
-}
-
-#explore-bar-bottom button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
 }
 
 #right-box {
