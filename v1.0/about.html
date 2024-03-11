@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ricky | Feedback Form</title>
 
+    <title>Ricky v1.0</title>
     <link rel="icon" type="image/x-icon" href="./Icons/faviconCat.png">
+
+    <!--dark and light favicons !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 
     <link rel="stylesheet" href="styleLoad.css">
     <link rel="stylesheet" href="styleNav.css">
     <link rel="stylesheet" href="styleLanding.css">
     <link rel="stylesheet" href="styleRoot.css">
     <link rel="stylesheet" href="styleFeedbackForm.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script> -->
+    <!--GSAP-->
 
 </head>
 <body>
@@ -30,14 +45,17 @@
                     <div></div>
                     <div></div>
                 </div> -->
-                <p>Ricky.</p>
+
+                <!--make image bigger- work on changing it maybe-->
+                <img src="./Icons/header-cat-icon.png" alt="cat-icon" id="header-cat-icon">
+                <a href="index.html">Ricky</a>
             </div>
             <div id="right-box">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Donate</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Review</a></li>
+                    <li><a href="Review.html">Review</a></li>
                 </ul>
             </div>
       </div>
@@ -61,18 +79,19 @@
             Explore
         </button>
 
-        <!--remove the buttons and just leave a tags. especially for ascessibility-->
+        <!--[done] remove the buttons and just leave a tags. especially for ascessibility-->
+        <!--is the <p> tag neccessary? Semantically?-->
 
         <div id="explore-bar-bottom">
-            <button id="about-ricky-btn" class="nav-hover-element"><a href="#">About Ricky</a></button >
-            <button id="naughty-and-nice-btn" class="nav-hover-element"><a href="#" >Naughty & Nice</a></button>
-            <button id="likes-and-dislikes-btn" class="nav-hover-element"><a href="#" >Likes & Dislikes</a></button>
-            <button id="fashion-btn" class="nav-hover-element"><a href="#" >Fashion</a></button>
-            <button id="vitals-btn" class="nav-hover-element"><a href="#" >Vitals</a></button>
-            <button id="gallery-btn" class="nav-hover-element"><a href="#" >Gallery</a></button>
-            <button id="interview-btn" class="nav-hover-element"><a href="#" >Interview</a></button>
-            <button id="pedigree-btn" class="nav-hover-element"><a href="#" >Pedigree</a></button>
-            <button id="friends-btn" class="nav-hover-element"><a href="#" >Friends</a></button>
+            <p><a id="about-ricky-btn" class="nav-hover-element" href="#">About Ricky</a></p>
+            <p><a id="naughty-and-nice-btn" class="nav-hover-element" href="#" >Naughty & Nice</a></p>
+            <p><a id="likes-and-dislikes-btn" class="nav-hover-element" href="#" >Likes & Dislikes</a></p>
+            <p><a id="fashion-btn" class="nav-hover-element" href="#" >Fashion</a></p>
+            <p><a id="vitals-btn" class="nav-hover-element" href="#" >Vitals</a></p>
+            <p><a id="gallery-btn" class="nav-hover-element" href="#" >Gallery</a></p>
+            <p><a id="interview-btn" class="nav-hover-element" href="#" >Interview</a></p>
+            <p><a id="pedigree-btn" class="nav-hover-element" href="#" >Pedigree</a></p>
+            <p><a id="friends-btn" class="nav-hover-element" href="#" >Friends</a></p>
         </div>
 
         <!--the ultimate goal would be to make each category change color when hovered over
@@ -143,8 +162,7 @@
             </div>
 
             <div id="pedigree-btn-expand" class="explore-expand-inner">
-                <div>    <script src="scriptMain.js"></script>
-                    <script src="GSAP.js"></script>
+                <div>
                   <p>Pedigree</p>
                 </div>
                 <div>
@@ -161,37 +179,67 @@
                 </div>
             </div>
 
+            <!--People named after Ricky:
+            Ricky Ricardo
+            Ricky Baker
+            etc.-->
+
         </div>
 
     </div>
     </section>
 
+
+
 <!--main content starts here - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
 
-
-<!--name
-email
-do you like cats; no -> answer denied
-favourite type of cat
-rate the following on a scale of 1 to 10
-ricky -> lower than 5/10 = perma ban when hovering over the radio buttons
-them go red lower than 5
-
-aesthetics
-accessability
-usability
--->
-
         <div id="body-area">
-            <div id="form-area">
-                <form action="mailto:random@anu.au">
-                    
-                </form>
+
+            <div class="landing-section" id="landing-slogan">
+              <p class="body-main-text">About</p>
+            </div>
+<!-- rename these classes landing-section --- body-section?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+            <div class="landing-section" >
+                <p>about section</p>
+            </div>
+
+            <div class="landing-section" id="footer-area">
+              <div id="footer">
+                <div id="footer-main-links" class="footer-links">
+                  <p class="footer-headings">Enter the Ricky-verse</p>
+                  <p><a href="#">About Ricky</a></p>
+                  <p><a href="#">Naughty & Nice</a></p>
+                  <p><a href="#">Likes & Dislikes</a></p>
+                  <p><a href="#">Fashion</a></p>
+                  <p><a href="#">Vitals</a></p>
+                  <p><a href="#">Gallery</a></p>
+                  <p><a href="#">Interview</a></p>
+                  <p><a href="#">Pedigree</a></p>
+                  <p><a href="#">Friends</a></p>
+                </div>
+                <div id="top-bar-links" class="footer-links">
+                  <p class="footer-headings">Name</p>
+                  <p><a href="about.html">About</a></p>
+                  <p><a href="#">Donate</a></p>
+                  <p><a href="#">Contact</a></p>
+                  <p><a href="Review.html">Review</a></p>
+                </div>
+                <div id="extra-links" class="footer-links">
+                  <p class="footer-headings">Name</p>
+                  <p><a href="assignment.html">Assignment</a></p>
+                  <p><a href="sourcelog.html">Source Log</a></p>
+                </div>
+              </div>
             </div>
         </div>
 
     </section>
 
     <script src="scriptLoad.js"></script>
+    <script src="scriptMain.js"></script>
+    <script src="GSAP.js"></script>
+
+
+
 </body>
 </html>

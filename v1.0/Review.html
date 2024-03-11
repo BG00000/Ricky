@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styleNav.css">
     <link rel="stylesheet" href="styleLanding.css">
     <link rel="stylesheet" href="styleRoot.css">
+    <link rel="stylesheet" href="styleFeedbackForm.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,14 +27,6 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script> -->
     <!--GSAP-->
-
-
-    
-    <!--
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      add call to actions !!!!
-    ~~~~~~~~~~~~~~~~~~
-    -->
 
 </head>
 <body>
@@ -147,97 +140,7 @@
                 </div>
                 <div>
                   Explore <span class="emph_1">Ricky's</span> heart beat, respiration rate, and more!
-                </div>                <form action="mailto:random@anu.edu.au" id="review-form">
-
-                  <div class="form-section">
-                      <legend>Do you like ricky?</legend>
-                      <p class="subtle-nudge">(Answering 'no' will result in a permanent ban)</p>
-                      <div class="form-input-area">
-                          <div>
-                              <input type="radio" name="like-ricky" value="true">
-                              <label for="like-ricky">Yes</label>
-                          </div>
-                          <div>
-                              <input type="radio" name="like-ricky" value="false">
-                              <label for="like-ricky">No</label>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="form-section">
-                      <legend>Do you think Ricky is ugly?</legend>
-                      <p class="subtle-nudge">(I'll leave this one up to you)</p>
-                      <div class="form-input-area">
-                          <div>
-                              <input type="radio" name="ricky-ugly" value="true">
-                              <label for="like-ricky">Yes</label>
-                          </div>
-                          <div>
-                              <input type="radio" name="ricky-ugly" value="false">
-                              <label for="like-ricky">No</label>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="form-section">
-                      <legend>Did you enjoy admiring Ricky?</legend>
-                      <p class="subtle-nudge">(Did you?)</p>
-                      <div class="form-input-area">
-                          <div>
-                              <input type="radio" name="admire-ricky" value="true">
-                              <label for="like-ricky">Yes</label>
-                          </div>                <form action="mailto:random@anu.edu.au" id="review-form">
-
-                            <div class="form-section">
-                                <legend>Do you like ricky?</legend>
-                                <p class="subtle-nudge">(Answering 'no' will result in a permanent ban)</p>
-                                <div class="form-input-area">
-                                    <div>
-                                        <input type="radio" name="like-ricky" value="true">
-                                        <label for="like-ricky">Yes</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="like-ricky" value="false">
-                                        <label for="like-ricky">No</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-section">
-                                <legend>Do you think Ricky is ugly?</legend>
-                                <p class="subtle-nudge">(I'll leave this one up to you)</p>
-                                <div class="form-input-area">
-                                    <div>
-                                        <input type="radio" name="ricky-ugly" value="true">
-                                        <label for="like-ricky">Yes</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="ricky-ugly" value="false">
-                                        <label for="like-ricky">No</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-section">
-                                <legend>Did you enjoy admiring Ricky?</legend>
-                                <p class="subtle-nudge">(Did you?)</p>
-                                <div class="form-input-area">
-                                    <div>
-                                        <input type="radio" name="admire-ricky" value="true">
-                                        <label for="like-ricky">Yes</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" name="admire-ricky" value="false">
-                                        <label for="like-ricky">No</label>
-                                    </div>
-                                </div>
-                            </div>
-        
-                        </form>
-                          <div>
-                              <input type="radio" name="admire-ricky" value="false">
-                              <label for="like-ricky">No</label>
-                          </div>
-                      </div>
-                  </div>
-
-              </form>
+                </div>
             </div>
 
             <div id="gallery-btn-expand" class="explore-expand-inner">
@@ -291,17 +194,58 @@
 <!--main content starts here - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
 
         <div id="body-area">
-            <!-- <div class="landing-section" id="landing-slogan">
-              <p class="body-main-text">The website for all things<span class="emph_blue"> Ricky.</span></p>
-            </div> -->
 
             <div class="landing-section" id="landing-slogan">
-              <!-- <p class="body-main-text">Assignment.html <span class="emph_blue"><a href="assignment.html">Here</a></span></p> -->
-              <p class="body-main-text">A website for everything <span class="emph_blue">Ricky</span></p>
+              <p class="body-main-text">Tell us what <span class="emph_blue">you</span> think.</p>
             </div>
+<!-- rename these classes landing-section --- body-section?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+            <div class="landing-section" >
+                <form action="mailto:random@anu.edu.au" id="review-form">
 
-            <div class="landing-section" id="landing-meet-ricky">
-              <p class="body-main-text">Meet Ricky</p>
+                    <div class="form-section">
+                        <legend>Do you like ricky?</legend>
+                        <p class="subtle-nudge">(Answering 'no' will result in a permanent ban)</p>
+                        <div class="form-input-area">
+                            <div>
+                                <input type="radio" name="like-ricky" value="true">
+                                <label for="like-ricky">Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="like-ricky" value="false">
+                                <label for="like-ricky">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <legend>Do you think Ricky is ugly?</legend>
+                        <p class="subtle-nudge">(I'll leave this one up to you)</p>
+                        <div class="form-input-area">
+                            <div>
+                                <input type="radio" name="ricky-ugly" value="true">
+                                <label for="like-ricky">Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="ricky-ugly" value="false">
+                                <label for="like-ricky">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <legend>Did you enjoy admiring Ricky?</legend>
+                        <p class="subtle-nudge">(Did you?)</p>
+                        <div class="form-input-area">
+                            <div>
+                                <input type="radio" name="admire-ricky" value="true">
+                                <label for="like-ricky">Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="admire-ricky" value="false">
+                                <label for="like-ricky">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
             </div>
 
             <div class="landing-section" id="footer-area">
@@ -323,7 +267,7 @@
                   <p><a href="about.html">About</a></p>
                   <p><a href="#">Donate</a></p>
                   <p><a href="#">Contact</a></p>
-                  <p><a href="Review.html">Review</a></p>
+                  <p><a href="#">Review</a></p>
                 </div>
                 <div id="extra-links" class="footer-links">
                   <p class="footer-headings">Name</p>
