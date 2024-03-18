@@ -20,12 +20,9 @@ function handleExploreExpand () {
             
             exploreExpand.style.display = 'none'
 
-
-
             let testItem = document.getElementById(element.id + '-expand')
             testItem.style.display = 'none'
             element.style.color = 'var(--navText)'
-
 
             exploreExpand.onmouseover = () => {
                 exploreExpand.style.display = 'flex'

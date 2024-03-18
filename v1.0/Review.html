@@ -200,7 +200,7 @@
             </div>
 <!-- rename these classes landing-section --- body-section?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
             <div class="landing-section" >
-                <form action="mailto:random@anu.edu.au" id="review-form">
+                <form action="mailto:random@anu.edu.au" method="post" enctype="multipart/form-data" id="review-form">
 
                     <div class="form-section">
                         <legend>Do you like ricky?</legend>
@@ -306,7 +306,11 @@
                             <label for="like-ricky">No</label>
                         </div>
                     </div>
-                </div>
+                  </div>
+                  <div class="form-section">
+                    <button type="submit" id="form-submit-btn">Submit</button>
+                  </div>
+                
 
                 </form>
             </div>
