@@ -1,36 +1,6 @@
-body {
-    background-color: var(--mainContent);
-}
-
-#content-area {
-    background-color: var(--mainContent);
-    height: 100%;
-    width: 100%;
-}
-
-#body-area {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.body-main-text {
-    font-size: clamp(22px, 6.5vw, 90px);
-    color: var(--navText);
-    font-weight: 500;
-
-
-}
-
-.landing-section {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-
 #landing-slogan {
-    min-height: 100vh;
+    margin-top: 110px;
+    min-height: 82vh;
 }
 
 #landing-meet-ricky {
@@ -41,37 +11,4 @@ body {
 
 #landing-meet-ricky p {
     color: white;
-}
-
-#footer-area {
-    padding: 30px 0px;
-    border-top: 1px solid var(--navBorder);
-}
-
-#footer {
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    max-width: 800px;
-}
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: rgb(52, 99, 255);
-}
-
-.footer-links a:hover {
-    opacity: 0.8;
-}
-
-.footer-headings {
-    color: var(--navText);
-    font-size: 25px;
-    padding-bottom: 10px;
 }
