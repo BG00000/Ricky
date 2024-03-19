@@ -1,0 +1,11 @@
+#about-body-text {
+    width: 100%;
+}
+
+#about-body-text p {
+    max-width: 1200px;
+    padding: 0px 20px 20px 20px;
+    font-size: 19px;
+    line-height: 28px;
+    color: var(--navText);
+}

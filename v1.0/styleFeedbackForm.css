@@ -33,3 +33,25 @@
     display: flex;
     gap: 20px;
 }
+
+#form-naughty-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px;
+}
+
+#form-naughty-div div {
+    display: flex;
+    gap: 6px;
+    min-width: fit-content;
+}
+
+#form-submit-btn {
+    max-width: 200px;
+    padding: 10px 5px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
