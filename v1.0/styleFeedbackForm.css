@@ -52,11 +52,47 @@
     min-width: fit-content;
 }
 
-#form-submit-btn {
-    max-width: 200px;
-    padding: 10px 5px;
+#form-submit-btn, 
+#form-reset-btn {
+    width: 200px;
     border-radius: 30px;
-    border: none;
     font-size: 16px;
     cursor: pointer;
+    color: var(--navText);
 }
+
+#form-submit-btn {
+    border: none;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#form-reset-btn {
+    border: 1px solid var(--navBorder);
+    padding: 10px 5px;
+    background-color: transparent;
+}
+
+#form-reset-btn:hover {
+    background-color: rgb(246, 246, 246);
+}
+
+#submit-message {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 30px;
+    gap: 15px;
+    padding: 10px 0px;
+    border: 1px solid var(--themeBlue);
+    color: var(--themeBlue);
+}
+
+#submit-message img {
+    height: 23px;
+}
+

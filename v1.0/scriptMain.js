@@ -41,3 +41,17 @@ function handleExploreExpand () {
 }
 
 handleExploreExpand()
+
+function handleSubmitForm() {
+    const submitBtn = document.getElementById('form-submit-btn')
+    const resetBtn = document.getElementById('form-reset-btn')
+    const submitMessage = document.getElementById('submit-message')
+    submitBtn.addEventListener('click', () => {
+    submitMessage.style.display = 'flex'
+
+    submitBtn.style.display = 'none'
+    resetBtn.style.display = 'none'
+    })
+}
+
+handleSubmitForm()
