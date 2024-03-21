@@ -4,7 +4,6 @@
     --navText: rgb(29, 29, 31);
     --navBorder: rgb(209, 209, 209);
     --themeBlue: rgb(61, 135, 255);
-
     --lightGrey1: rgb(245, 245, 245);
 
     --maxWidth: 1200px;
@@ -25,8 +24,6 @@ body {
     justify-content: center;
     align-items: center;
     word-wrap: break-word;
-    
-    /* padding-bottom: 2000px; */
 }
 
 .emph_blue {

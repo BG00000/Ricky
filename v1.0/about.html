@@ -1,267 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ricky v1.0</title>
+      <link rel="icon" type="image/x-icon" href="./Icons/header-cat-icon.png">
 
-    <title>Ricky v1.0</title>
-    <link rel="icon" type="image/x-icon" href="./Icons/header-cat-icon.png">
-    <!--dark and light favicons !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+      <!--add dark and light theme favicons-->
 
-    <link rel="stylesheet" href="styleLoad.css">
-    <link rel="stylesheet" href="styleNav.css">
-    <link rel="stylesheet" href="styleWebMain.css">
-    <link rel="stylesheet" href="styleRoot.css">
-    <link rel="stylesheet" href="styleAbout.css">
+      <link rel="stylesheet" href="styleLoad.css">
+      <link rel="stylesheet" href="styleNav.css">
+      <link rel="stylesheet" href="styleWebMain.css">
+      <link rel="stylesheet" href="styleRoot.css">
+      <link rel="stylesheet" href="styleAbout.css">
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
-    <!-- fonts -->
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+      <!-- fonts -->
 
-    <!--GSAP-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollSmoother.min.js"></script> -->
-    <!--GSAP-->
-
-</head>
-<body>
-    <p id="loading-animation"></p>
-
-    <section id="loading-cover"></section>
-
-    <section id="content-area">
-
-    <section id="top-bar">
-      <div id="nav-bar-area">
-        <div id="nav-bar">
-            <div id="left-box">
-                <!-- <div id="burger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div> -->
-
-                <!--make image bigger- work on changing it maybe-->
-                <img src="./Icons/header-cat-icon.png" alt="cat-icon" id="header-cat-icon">
-                <a href="index.html">Ricky</a>
+      <!--GSAP-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+      <!--GSAP-->
+   </head>
+   <body>
+      <p id="loading-animation"></p>
+      <section id="loading-cover"></section>
+      <section id="content-area">
+         <section id="top-bar">
+            <div id="nav-bar-area">
+               <div id="nav-bar">
+                  <div id="left-box">
+                     <img src="./Icons/header-cat-icon.png" alt="cat-icon" id="header-cat-icon">
+                     <a href="index.html">Ricky</a>
+                  </div>
+                  <div id="right-box">
+                     <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Donate</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="review.html">Review</a></li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-            <div id="right-box">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="Review.html">Review</a></li>
-                </ul>
+            <div id="explore-bar-area">
+               <button id="explore-pill">
+               Explore
+               </button>
+               <!--is the <p> tag neccessary? Semantically?-->
+               <div id="explore-bar-bottom">
+                  <p><a id="about-ricky-btn" class="nav-hover-element" href="#">[change this]</a></p>
+                  <p><a id="naughty-and-nice-btn" class="nav-hover-element" href="#" >Naughty & Nice</a></p>
+                  <p><a id="likes-and-dislikes-btn" class="nav-hover-element" href="#" >Likes & Dislikes</a></p>
+                  <p><a id="fashion-btn" class="nav-hover-element" href="#" >Fashion</a></p>
+                  <p><a id="vitals-btn" class="nav-hover-element" href="#" >Vitals</a></p>
+                  <p><a id="gallery-btn" class="nav-hover-element" href="#" >Gallery</a></p>
+                  <p><a id="interview-btn" class="nav-hover-element" href="#" >Interview</a></p>
+                  <p><a id="pedigree-btn" class="nav-hover-element" href="#" >Pedigree</a></p>
+                  <p><a id="friends-btn" class="nav-hover-element" href="#" >Friends</a></p>
+               </div>
+               <div id="explore-expand">
+                  <div id="about-ricky-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>About Ricky.</p>
+                     </div>
+                     <div>
+                        Explore everything about <span class="emph_1">Ricky</span> and how he came to be.
+                     </div>
+                  </div>
+                  <div id="naughty-and-nice-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Naughty & Nice</p>
+                     </div>
+                     <div>
+                        Explore whether <span class="emph_1">Ricky</span> is getting presents from Santa this year
+                     </div>
+                  </div>
+                  <div id="likes-and-dislikes-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Likes & Dislikes</p>
+                     </div>
+                     <div>
+                        Explore <span class="emph_1">Ricky's</span> likes & dislikes
+                     </div>
+                  </div>
+                  <div id="fashion-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Fashion</p>
+                     </div>
+                     <div>
+                        Explore <span class="emph_1">Ricky's</span> sense of fashion
+                     </div>
+                  </div>
+                  <div id="vitals-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Vitals</p>
+                     </div>
+                     <div>
+                        Explore <span class="emph_1">Ricky's</span> heart beat, respiration rate, and more!
+                     </div>
+                  </div>
+                  <div id="gallery-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Gallery</p>
+                     </div>
+                     <div>
+                        Explore a plethora of candid <span class="emph_1">Ricky</span> portraits
+                     </div>
+                  </div>
+                  <div id="interview-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Interview</p>
+                     </div>
+                     <div>
+                        Does <span class="emph_1">Ricky</span> like his food cold or warm? Find out here
+                     </div>
+                  </div>
+                  <div id="pedigree-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Pedigree</p>
+                     </div>
+                     <div>
+                        Does <span class="emph_1">Ricky</span> have a royal lineage?
+                     </div>
+                  </div>
+                  <div id="friends-btn-expand" class="explore-expand-inner">
+                     <div>
+                        <p>Friends</p>
+                     </div>
+                     <div>
+                        Explore <span class="emph_1">Ricky's</span> friends (not what you may expect)
+                     </div>
+                  </div>
+               </div>
             </div>
-      </div>
-  </div>
-
-    <!-- maybe change to a W3Schools nav bar design -->
-
-    <!-- to do:
-    
-    make the explore bar more interactive and make it so that the buttons 
-    can be cycled with arrows on either side (js)
-
-    button IDs are redundant now
-    chnage ID from bottom
-    
-    -->
-
-    <div id="explore-bar-area">
-
-        <button id="explore-pill">
-            Explore
-        </button>
-
-        <!--[done] remove the buttons and just leave a tags. especially for ascessibility-->
-        <!--is the <p> tag neccessary? Semantically?-->
-
-        <div id="explore-bar-bottom">
-            <p><a id="about-ricky-btn" class="nav-hover-element" href="#">[change this]</a></p>
-            <p><a id="naughty-and-nice-btn" class="nav-hover-element" href="#" >Naughty & Nice</a></p>
-            <p><a id="likes-and-dislikes-btn" class="nav-hover-element" href="#" >Likes & Dislikes</a></p>
-            <p><a id="fashion-btn" class="nav-hover-element" href="#" >Fashion</a></p>
-            <p><a id="vitals-btn" class="nav-hover-element" href="#" >Vitals</a></p>
-            <p><a id="gallery-btn" class="nav-hover-element" href="#" >Gallery</a></p>
-            <p><a id="interview-btn" class="nav-hover-element" href="#" >Interview</a></p>
-            <p><a id="pedigree-btn" class="nav-hover-element" href="#" >Pedigree</a></p>
-            <p><a id="friends-btn" class="nav-hover-element" href="#" >Friends</a></p>
-        </div>
-
-        <!--the ultimate goal would be to make each category change color when hovered over
-            also change background color of explore-bar-area-->
-
-        <div id="explore-expand">
-            <div id="about-ricky-btn-expand" class="explore-expand-inner">
-              <div>
-                <p>About Ricky.</p>
-              </div>
-              <div>
-                Explore everything about <span class="emph_1">Ricky</span> and how he came to be.
-              </div>
-            </div>
-
-            <div id="naughty-and-nice-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Naughty & Nice</p>
-                </div>
-                <div>
-                  Explore whether <span class="emph_1">Ricky</span> is getting presents from Santa this year
-                </div>
-            </div>
-
-            <div id="likes-and-dislikes-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Likes & Dislikes</p>
-                </div>
-                <div>
-                  Explore <span class="emph_1">Ricky's</span> likes & dislikes
-                </div>
-            </div>
-
-            <div id="fashion-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Fashion</p>
-                </div>
-                <div>
-                  Explore <span class="emph_1">Ricky's</span> sense of fashion
-                </div>
-            </div>
-
-            <div id="vitals-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Vitals</p>
-                </div>
-                <div>
-                  Explore <span class="emph_1">Ricky's</span> heart beat, respiration rate, and more!
-                </div>
-            </div>
-
-            <div id="gallery-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Gallery</p>
-                </div>
-                <div>
-                  Explore a plethora of candid <span class="emph_1">Ricky</span> portraits
-                </div>
-            </div>
-
-            <div id="interview-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Interview</p>
-                </div>
-                <div>
-                  Does <span class="emph_1">Ricky</span> like his food cold or warm? Find out here
-                </div>
-            </div>
-
-            <div id="pedigree-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Pedigree</p>
-                </div>
-                <div>
-                  Does <span class="emph_1">Ricky</span> have a royal lineage?
-                </div>
-            </div>
-
-            <div id="friends-btn-expand" class="explore-expand-inner">
-                <div>
-                  <p>Friends</p>
-                </div>
-                <div>
-                  Explore <span class="emph_1">Ricky's</span> friends (not what you may expect)
-                </div>
-            </div>
-
-            <!--People named after Ricky:
-            Ricky Ricardo
-            Ricky Baker
-            etc.-->
-
-        </div>
-
-    </div>
-    </section>
-
-
-
-<!--main content starts here - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
-
-        <div id="body-area">
-
+         </section>
+         <!--main content starts here-->
+         <div id="body-area">
             <div class="landing-section" id="about-slogan">
-              <p class="body-main-text">About</p>
+               <p class="body-main-text">About</p>
             </div>
-<!-- rename these classes landing-section --- body-section?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+            <!-- rename these classes landing-section-->
             <div class="landing-section" id="about-body-text">
-              <div>
-                <img src="./Images/Ricky_1.jpg" alt="Ricky-sleeping-on-soft-blanket" id="about-ricky-img">
-                <div>
-                  <p>
-                    <span class="emph_blue">This website is all about Ricky.</span> Whether it 
-                    be the next fashion trend, the latest and greatest 
-                    kitten food, or the quickest way to get onto the 
-                    bench to eat the butter, Ricky is onto it, but this 
-                    website is onto Ricky.
-                  </p>
-                  <p>
-                    Ricky, A.K.A. Ricky Baker, 
-                    is a small but confident Devon Rex Kitten. Ricky 
-                    emerged as an influencer, and has already been 
-                    recognised by some of the biggest names around, 
-                    including but not exclusive to, Taika Waiti, in 
-                    his film, Hunt for the Wilder People, Ricky Gervais, 
-                    Richard Nixon, Richard Feynman, and Richard Wagner. 
-                    Mind you, this is all before his first birthday 
-                    (see vitals for more ricky stats){insert call to action}, so who knows 
-                    what else is to come. 
-                  </p>
-                </div>
-              </div>
+               <div>
+                  <img src="./Images/Ricky_1.jpg" alt="Ricky-sleeping-on-soft-blanket" id="about-ricky-img">
+                  <div>
+                     <p><span class="emph_blue">This website is all about Ricky.</span> Whether it be the next fashion trend, the latest and greatest kitten food, or the quickest way to get onto the bench to eat the butter, Ricky is onto it, but this website is onto Ricky.</p>
+                     <p>Ricky, A.K.A. Ricky Baker, is a small but confident Devon Rex Kitten. Ricky emerged as an influencer, and has already been recognised by some of the biggest names around, including but not exclusive to, Taika Waiti, in his film, Hunt for the Wilder People, Ricky Gervais, Richard Nixon, Richard Feynman, and Richard Wagner. Mind you, this is all before his first birthday (see vitals for more ricky stats){insert call to action}, so who knows what else is to come.</p>
+                  </div>
+               </div>
             </div>
-
             <div class="landing-section" id="footer-area">
-              <div id="footer">
-                <div id="footer-main-links" class="footer-links">
-                  <p class="footer-headings">Get to know Ricky</p>
-                  <p><a href="#">About Ricky</a></p>
-                  <p><a href="#">Naughty & Nice</a></p>
-                  <p><a href="#">Likes & Dislikes</a></p>
-                  <p><a href="#">Fashion</a></p>
-                  <p><a href="#">Vitals</a></p>
-                  <p><a href="#">Gallery</a></p>
-                  <p><a href="#">Interview</a></p>
-                  <p><a href="#">Pedigree</a></p>
-                  <p><a href="#">Friends</a></p>
-                </div>
-                <div id="top-bar-links" class="footer-links">
-                  <p class="footer-headings">Help Ricky</p>
-                  <p><a href="about.html">About</a></p>
-                  <p><a href="#">Donate</a></p>
-                  <p><a href="#">Contact</a></p>
-                  <p><a href="Review.html">Review</a></p>
-                </div>
-                <div id="extra-links" class="footer-links">
-                  <p class="footer-headings">Behind the scenes</p>
-                  <p><a href="assignment.html">Assignment</a></p>
-                  <p><a href="sourcelog.html">Source Log</a></p>
-                </div>
-              </div>
+               <div id="footer">
+                  <div id="footer-main-links" class="footer-links">
+                     <p class="footer-headings">Get to know Ricky</p>
+                     <p><a href="#">About Ricky</a></p>
+                     <p><a href="#">Naughty & Nice</a></p>
+                     <p><a href="#">Likes & Dislikes</a></p>
+                     <p><a href="#">Fashion</a></p>
+                     <p><a href="#">Vitals</a></p>
+                     <p><a href="#">Gallery</a></p>
+                     <p><a href="#">Interview</a></p>
+                     <p><a href="#">Pedigree</a></p>
+                     <p><a href="#">Friends</a></p>
+                  </div>
+                  <div id="top-bar-links" class="footer-links">
+                     <p class="footer-headings">Help Ricky</p>
+                     <p><a href="about.html">About</a></p>
+                     <p><a href="#">Donate</a></p>
+                     <p><a href="#">Contact</a></p>
+                     <p><a href="review.html">Review</a></p>
+                  </div>
+                  <div id="extra-links" class="footer-links">
+                     <p class="footer-headings">Behind the scenes</p>
+                     <p><a href="assignment.html">Assignment</a></p>
+                     <p><a href="sourcelog.html">Source Log</a></p>
+                  </div>
+               </div>
             </div>
-        </div>
-
-    </section>
-
-    <script src="scriptLoad.js"></script>
-    <script src="scriptMain.js"></script>
-    <script src="GSAP.js"></script>
-
-
-
-</body>
+         </div>
+      </section>
+      <script src="scriptLoad.js"></script>
+      <script src="scriptMain.js"></script>
+      <script src="GSAP.js"></script>
+   </body>
 </html>

@@ -5,15 +5,11 @@
 }
 
 #header-cat-icon {
-    height: 40px; /* will porbs need white version */
+    height: 40px; /* will probs need white version */
 }
 
-
 #nav-bar-area {
-    /* background-color: var(--navBarBgc); */
-
     background-color: rgba(255, 255, 255, 0.7);
-
     display: flex;
     min-height: 70px;
     justify-content: center;
@@ -28,26 +24,18 @@
     width: 100%;
     flex: 1;
     color: var(--navText); 
-
     z-index: 1;
 }
 
 #explore-bar-area {
-    /* background-color: var(--navBarBgc); */
-
     background-color: rgba(255, 255, 255, 0.7);
-
     top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 1px solid var(--navBorder);
     padding: 0px 15px;  
-
     z-index: 1;
-
-
-    /* position: sticky; */
 }
 
 
@@ -80,7 +68,6 @@
     padding: 10px;
 }
 
-
 .explore-expand-inner {
     display: none; /*ensure display is none for drop down to work*/
     gap: 20px;
@@ -96,7 +83,6 @@
 #explore-expand div:last-child {
     font-size: 20px;
     color: rgb(112, 112, 114); /*update colors to var()*/
-    text-wrap: wrap;
 }
 
 

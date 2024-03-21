@@ -3,8 +3,8 @@ function handleSubmitForm() {
     const reviewForm = document.getElementById('review-form')
     const submitMessage = document.getElementById('submit-message')
     submitBtn.addEventListener('click', () => {
-        reviewForm.style.display = 'none'
-        submitMessage.style.display = 'flex'
+       reviewForm.style.display = 'none'
+       submitMessage.style.display = 'flex'
     })
 }
 

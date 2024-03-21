@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="styleNav.css">
       <link rel="stylesheet" href="styleWebMain.css">
       <link rel="stylesheet" href="styleRoot.css">
-      <link rel="stylesheet" href="styleLanding.css">
+      <link rel="stylesheet" href="styleReview.css">
 
       <!-- fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -141,11 +141,163 @@
          </section>
          <!--main content starts here-->
          <div id="body-area">
-            <div class="landing-section" id="landing-slogan">
-               <p class="body-main-text">A website for everything <span class="emph_blue">Ricky</span></p>
+            <div class="landing-section" id="review-slogan">
+               <p class="body-main-text">Tell us what <span class="emph_blue">you</span> think.</p>
+               <p id="submit-message">
+                  Thank you for your response!
+                  <img src="./Icons/checked.png" alt="black-checkmark">
+               </p>
             </div>
-            <div class="landing-section" id="landing-meet-ricky">
-               <p class="body-main-text">Meet Ricky</p>
+            <!-- rename these classes-->
+            <div class="landing-section" >
+               <form action="mailto:random@anu.edu.au" method="post" enctype="multipart/form-data" id="review-form">
+                  <div class="form-section">
+                     <legend>Do you like ricky?</legend>
+                     <p class="subtle-nudge">(We <strong>strongly</strong> recommend answering yes)</p>
+                     <div class="form-input-area">
+                        <div>
+                           <input type="radio" name="like-ricky" value="true">
+                           <label for="like-ricky">Yes</label>
+                        </div>
+                        <div>
+                           <input type="radio" name="like-ricky" value="false">
+                           <label for="like-ricky">No</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <legend>Do you think Ricky is ugly?</legend>
+                     <p class="subtle-nudge">(We will leave this one up to you)</p>
+                     <div class="form-input-area">
+                        <div>
+                           <input type="radio" name="ricky-ugly" value="true">
+                           <label for="like-ricky">Yes</label>
+                        </div>
+                        <div>
+                           <input type="radio" name="ricky-ugly" value="false">
+                           <label for="like-ricky">No</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <legend>Did you enjoy admiring Ricky?</legend>
+                     <p class="subtle-nudge">(Did you?)</p>
+                     <div class="form-input-area">
+                        <div>
+                           <input type="radio" name="admire-ricky" value="true">
+                           <label for="like-ricky">Yes</label>
+                        </div>
+                        <div>
+                           <input type="radio" name="admire-ricky" value="false">
+                           <label for="like-ricky">No</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <legend>On a scale of 1 to 10, how naughty is Ricky?</legend>
+                     <div class="form-input-area">
+                        <div id="form-naughty-div">
+                           <!--maybe do this with JS instead-->
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="1">
+                              <label for="naughty-1">1</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="2">
+                              <label for="naughty-1">2</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="3">
+                              <label for="naughty-1">3</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="4">
+                              <label for="naughty-1">4</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="5">
+                              <label for="naughty-1">5</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="6">
+                              <label for="naughty-1">6</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="7">
+                              <label for="naughty-1">7</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="8">
+                              <label for="naughty-1">8</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="9">
+                              <label for="naughty-1">9</label>
+                           </div>
+                           <div>
+                              <input type="radio" name="naughty-ricky" value="10">
+                              <label for="naughty-1">10</label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <legend>Would you be interested in Ricky Merch?</legend>
+                     <div class="form-input-area">
+                        <div>
+                           <input type="radio" name="merch-ricky" value="true">
+                           <label for="like-ricky">Yes</label>
+                        </div>
+                        <div>
+                           <input type="radio" name="merch-ricky" value="false">
+                           <label for="like-ricky">No</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <legend><span class="emph_blue">On a more serious note...</span> <br><br>
+                        Do you find it easy to navigate around this website?
+                     </legend>
+                     <div class="form-input-area">
+                        <div>
+                           <input type="radio" name="easy-navigation?" value="true">
+                           <label for="navigation">Yes</label>
+                        </div>
+                        <div>
+                           <input type="radio" name="easy-navigation?" value="false">
+                           <label for="navigation">No</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <legend>Would you come back to this website?</legend>
+                     <div class="form-input-area">
+                        <div>
+                           <input type="radio" name="come-back?" value="true">
+                           <label for="come-back?">Yes</label>
+                        </div>
+                        <div>
+                           <input type="radio" name="come-back?" value="false">
+                           <label for="come-back?">No</label>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <legend>Is there any other feedback you would like to provide?</legend>
+                     <div class="form-input-area">
+                        <input type="text" name="feedback" placeholder="Write your feedback here..." id="feedback">
+                     </div>
+                  </div>
+                  <div class="form-section">
+                     <button type="submit" id="form-submit-btn">Submit</button>
+                     <!--animate the 'done' message on submission-->
+                     <p id="submit-message">
+                        Done
+                        <img src="./Icons/checked.png" alt="black-checkmark-inside-circle" id="submit-checkmark">
+                     </p>
+                     <button type="reset" id="form-reset-btn">Reset</button>
+                  </div>
+               </form>
             </div>
             <div class="landing-section" id="footer-area">
                <div id="footer">
@@ -178,6 +330,7 @@
          </div>
       </section>
       <script src="scriptLoad.js"></script>
+      <script src="scriptReview.js"></script>
       <script src="scriptMain.js"></script>
       <script src="GSAP.js"></script>
    </body>

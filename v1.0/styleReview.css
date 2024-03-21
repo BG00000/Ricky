@@ -2,9 +2,7 @@
     padding: 50px 20px;
     border-top: 1px solid var(--navBorder);
     border-bottom: none;
-    /* border-bottom: 1px solid var(--navBorder); */
     width: 100%;
-
     display: flex;
     align-items: center;
     flex-direction: column;

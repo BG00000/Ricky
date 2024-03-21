@@ -15,7 +15,6 @@
 }
 
 #about-body-text p {
-    max-width: 1000px;
     font-size: 19px;
     line-height: 28px;
     color: var(--navText);
