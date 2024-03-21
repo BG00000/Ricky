@@ -13,7 +13,7 @@ function handleExploreExpand() {
        })
     })
 
-    //handle mouse out event
+    //handle mouse out event 
 
     navHoverElements.forEach((element) => {
        element.addEventListener('mouseout', () => {
@@ -34,7 +34,7 @@ function handleExploreExpand() {
        })
     })
 }
-
+   
 handleExploreExpand()
  
 function handleExplorePill() {
