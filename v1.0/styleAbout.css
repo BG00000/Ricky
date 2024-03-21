@@ -15,7 +15,6 @@
 }
 
 #about-body-text p {
-    max-width: 1200px;
     font-size: 19px;
     line-height: 28px;
     color: var(--navText);
@@ -28,6 +27,18 @@
 }
 
 #about-ricky-img {
-    height: 400px;
+    width: 300px;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 940px) {
+    #about-body-text div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #about-body-text div div p {
+        text-align: center;
+    }
 }
