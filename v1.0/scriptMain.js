@@ -42,16 +42,16 @@ function handleExploreExpand () {
 
 handleExploreExpand()
 
-function handleSubmitForm() {
-    const submitBtn = document.getElementById('form-submit-btn')
-    const resetBtn = document.getElementById('form-reset-btn')
-    const submitMessage = document.getElementById('submit-message')
-    submitBtn.addEventListener('click', () => {
-    submitMessage.style.display = 'flex'
+function handleExplorePill() {
+    const explorePill = document.getElementById('explore-pill')
 
-    submitBtn.style.display = 'none'
-    resetBtn.style.display = 'none'
+    explorePill.addEventListener('mouseover', () => {
+        explorePill.innerText = 'Still under construction, sorry!'
+    })
+
+    explorePill.addEventListener('mouseout', () => {
+        explorePill.innerText = 'Explore'
     })
 }
 
-handleSubmitForm()
+handleExplorePill()

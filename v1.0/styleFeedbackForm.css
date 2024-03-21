@@ -14,6 +14,9 @@
 #review-slogan {
     margin-top: 110px;
     min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .form-section {
@@ -84,15 +87,22 @@
     display: none;
     justify-content: center;
     align-items: center;
-    width: 200px;
     border-radius: 30px;
     gap: 15px;
-    padding: 10px 0px;
+    padding: 20px;
     border: 1px solid var(--themeBlue);
     color: var(--themeBlue);
 }
 
 #submit-message img {
     height: 23px;
+}
+
+#feedback {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--navBorder);
+    width: 80%;
+    font-size: 17px;
 }
 
