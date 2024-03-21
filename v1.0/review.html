@@ -142,7 +142,7 @@
          <!--main content starts here-->
          <div id="body-area">
             <div class="landing-section" id="review-slogan">
-               <p class="body-main-text">Tell us what <span class="emph_blue">you</span> think.</p>
+               <h1 class="body-main-text">Tell us what <span class="emph_blue">you</span> think...</h1>
                <p id="submit-message">
                   Thank you for your response!
                   <img src="./Icons/checked.png" alt="black-checkmark">
@@ -150,7 +150,28 @@
             </div>
             <!-- rename these classes-->
             <div class="landing-section" >
+
+               <!--work on cheat proofing the form, e.g. you can't submit empty forms or infintely long names etc... use 'required' and limit emails to realistic emails-->
+
                <form action="mailto:random@anu.edu.au" method="post" enctype="multipart/form-data" id="review-form">
+                  <div class="form-section">
+                      <legend>...but tell us about yourself first!</legend>
+                      <p class="subtle-nudge">(You're allowed to get creative)</p>
+                      <div class="form-input-area" id="client-details">
+                        <label for="your-name">Name</label>
+                        <input type="text" name="your-name" class="text-input">
+
+                        <label for="your-email">Email</label>
+                        <input type="text" name="your-email" class="text-input">
+
+                        <div>
+                          <input type="radio" name="your-gender" value="male">
+                          <label for="your-gender">Male</label>
+                          <input type="radio" name="your-gender" value="female">
+                          <label for="your-gender">Female</label>
+                        </div>
+                      </div>
+                  </div>
                   <div class="form-section">
                      <legend>Do you like ricky?</legend>
                      <p class="subtle-nudge">(We <strong>strongly</strong> recommend answering yes)</p>
@@ -285,7 +306,7 @@
                   <div class="form-section">
                      <legend>Is there any other feedback you would like to provide?</legend>
                      <div class="form-input-area">
-                        <input type="text" name="feedback" placeholder="Write your feedback here..." id="feedback">
+                        <input type="text" name="feedback" placeholder="Write your feedback here..." class="text-input">
                      </div>
                   </div>
                   <div class="form-section">

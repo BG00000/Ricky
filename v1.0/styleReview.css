@@ -96,11 +96,23 @@
     height: 23px;
 }
 
-#feedback {
-    padding: 20px;
+.text-input {
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--navBorder);
     width: 80%;
     font-size: 17px;
 }
 
+#client-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#client-details label {
+    color: var(--navText);
+}
+
+#client-details div label {
+    padding-right: 10px;
+}
