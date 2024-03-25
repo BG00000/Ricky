@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed;
     backdrop-filter: blur(10px); /*look into this compatability */
+    z-index: 99;
 }
 
 #header-cat-icon {
