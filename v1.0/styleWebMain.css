@@ -15,6 +15,7 @@ body {
     align-items: center;
 }
 
+
 #body-area {
     display: flex;
     flex-direction: column;
