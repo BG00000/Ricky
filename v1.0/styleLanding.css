@@ -23,6 +23,7 @@
 }
 
 #landing-meet-ricky {
+    position: relative;
     min-height: 100vh;
     background-color: var(--themeBlue);
     background-image: linear-gradient(var(--themeBlue), rgb(202, 155, 210));
@@ -30,6 +31,17 @@
 
 #landing-meet-ricky p {
     color: white;
+    position: absolute;
+    top: 15%;
+}
+
+#meet-ricky-img {
+    animation: animate-ricky-img 0.5s infinite alternate;
+}
+
+@keyframes animate-ricky-img {
+    from {width: clamp(200px, 70%, 500px)}
+    to {width: clamp(200px, 65%, 550px)}
 }
 
 @keyframes animate-prompt {
