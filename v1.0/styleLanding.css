@@ -23,26 +23,33 @@
 }
 
 #landing-meet-ricky {
-    position: relative;
+    flex-direction: column;
+    display: flex;
     min-height: 100vh;
     background-color: var(--themeBlue);
     background-image: linear-gradient(var(--themeBlue), rgb(202, 155, 210));
+    gap: 50px;
 }
 
 #landing-meet-ricky p {
     color: white;
-    position: absolute;
-    top: 15%;
+    /* position: absolute;
+    top: 15%; */
 }
 
-#meet-ricky-img {
+#landing-meet-ricky img {
+    width: clamp(200px, 80%, 500px);
+    border-radius: 5px;
+}
+
+/* #meet-ricky-img {
     animation: animate-ricky-img 0.5s infinite alternate;
 }
 
 @keyframes animate-ricky-img {
     from {width: clamp(200px, 70%, 500px)}
     to {width: clamp(200px, 65%, 550px)}
-}
+} */
 
 @keyframes animate-prompt {
     from {bottom: 50px;}
