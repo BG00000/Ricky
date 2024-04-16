@@ -33,7 +33,7 @@
 }
 
 #landing-meet-ricky p {
-    color: white;
+    color: var(--navText);
     /* position: absolute;
     top: 15%; */
 }
@@ -46,7 +46,7 @@
     border: 2px solid rgba(255, 255, 255, 0.425);
     align-items: center;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.158);
+    background: rgba(255, 255, 255, 0.347);
     width: 50%;
     justify-content: space-between;
 }
@@ -84,7 +84,7 @@
 
 #landing-b1 {
     top: 300px;
-    left: -30px;
+    left: 10%px;
 }
 
 #landing-b2 {
@@ -110,6 +110,21 @@
 #landing-b6 {
     top: -50px;
     left: 30%;
+}
+
+#landing-b7 {
+    top: 200px;
+    left: 1%;
+}
+
+#landing-b8 {
+    top: 300px;
+    right: 10%;
+}
+
+#landing-b9 {
+    top: 300px;
+    right: 50%;
 }
 
 #footer-b1 {
@@ -186,4 +201,14 @@
     #landing-cta-container {
         flex-direction: column;
     }
-}   
+}  
+
+@media screen and (max-width: 700px) {
+    #landing-b4 {
+        display: none;
+    }
+    
+    #landing-b7 {
+        display: none;
+    }
+}
