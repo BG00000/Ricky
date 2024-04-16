@@ -54,7 +54,6 @@
                <!--is the <p> tag neccessary? Semantically?-->
                <!-- I can't get the text-decoration: none; or general navBar styles to work when uploading to stuWeb-->
                <div id="explore-bar-bottom">
-                  <p><a id="about-ricky-btn" class="nav-hover-element" href="#">[change this]</a></p>
                   <p><a id="naughty-and-nice-btn" class="nav-hover-element" href="#" >Naughty & Nice</a></p>
                   <p><a id="likes-and-dislikes-btn" class="nav-hover-element" href="#" >Likes & Dislikes</a></p>
                   <p><a id="fashion-btn" class="nav-hover-element" href="#" >Fashion</a></p>
@@ -65,14 +64,6 @@
                   <p><a id="friends-btn" class="nav-hover-element" href="#" >Friends</a></p>
                </div>
                <div id="explore-expand">
-                  <div id="about-ricky-btn-expand" class="explore-expand-inner">
-                     <div>
-                        <p>About Ricky.</p>
-                     </div>
-                     <div>
-                        <p>Explore everything about <span class="emph_1">Ricky</span> and how he came to be.</p>
-                     </div>
-                  </div>
                   <div id="naughty-and-nice-btn-expand" class="explore-expand-inner">
                      <div>
                         <p>Naughty & Nice</p>
@@ -142,13 +133,18 @@
          </section>
          <!--main content starts here-->
          <div id="body-area">
-            <div id="bg-ball-1" class="bg-ball"></div>
-            <div id="bg-ball-2" class="bg-ball"></div>
-            <div id="bg-ball-3" class="bg-ball"></div>
-            <div id="bg-ball-4" class="bg-ball"></div>
-            <div id="bg-ball-5" class="bg-ball"></div>
+            <div class="bg-ball-1" id="landing-b1"></div>
+            <div class="bg-ball-2" id="landing-b2"></div>
+            <div class="bg-ball-3" id="landing-b3"></div>
+            <div class="bg-ball-4" id="landing-b4"></div>
+            <div class="bg-ball-5" id="landing-b5"></div>
+            <div class="bg-ball-6" id="landing-b6"></div>
             <div class="landing-section" id="landing-slogan">
                <h1 class="body-main-text" id="slogan">A website for everything Ricky</h1>
+               <div id="landing-cta-container">
+                  <p>Explore the <span class="emph_colour">Ricky Gallery</span></p>
+                  <a href="#"><button>Explore</button></a>
+               </div>
                <div id="scroll-prompt">
                   <div></div>
                </div>
@@ -156,8 +152,6 @@
             <div class="landing-section" id="landing-meet-ricky">
                <p class="body-main-text">Meet Ricky</p>
                <img src="./Images/Ricky-in-green-house-2.jpg" alt="">
-
-               <!-- <img src="Images/Ricky-looking-thoughtful-cutout.png" alt="Ricky-looking-thoughtful-cutout" id="meet-ricky-img"> -->
             </div>
             <div class="landing-section" id="footer-area">
                <div id="footer">
@@ -186,9 +180,13 @@
                      <p><a href="sourcelog.html">Source Log</a></p>
                   </div>
                </div>
+               <div class="bg-ball-1" id="footer-b1"></div>
+               <div class="bg-ball-3" id="footer-b3"></div>
             </div>
          </div>
       </section>
+
+
       <script src="scriptLoad.js"></script>
       <script src="scriptMain.js"></script>
       <script src="scriptLanding.js"></script>

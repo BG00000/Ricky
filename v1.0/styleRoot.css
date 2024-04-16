@@ -3,7 +3,7 @@
     --navBarBgc: rgb(255, 255, 255);
     --navText: rgb(29, 29, 31);
     --navBorder: rgb(209, 209, 209);
-    --themeBlue: rgb(61, 135, 255);
+    --themeBlue: rgb(255, 86, 199);
     --lightGrey1: rgb(245, 245, 245);
 
     --maxWidth: 1200px;
@@ -32,4 +32,8 @@ body {
 
 .emph_white {
     color: var(--mainContent);
+}
+
+.emph_colour {
+    mix-blend-mode: color-burn;
 }

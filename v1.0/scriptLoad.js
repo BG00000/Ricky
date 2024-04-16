@@ -1,4 +1,4 @@
-// //--->disable scroll for animation duration!!<------
+//--->disable scroll for animation duration!!<------
 
 // only enable this to run when a certain html file (index) is reloaded!!!!!!!!!!!!!!!!!!!!
 
