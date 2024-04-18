@@ -27,15 +27,79 @@
     flex-direction: column;
     display: flex;
     min-height: 100vh;
-    /* background-color: var(--themeBlue);
-    background-image: linear-gradient(var(--themeBlue), rgb(202, 155, 210)); */
     gap: 50px;
 }
 
 #landing-meet-ricky p {
     color: var(--navText);
-    /* position: absolute;
-    top: 15%; */
+}
+
+#landing-meet-ricky img {
+    width: clamp(300px, 40%, 500px);
+    height: fit-content;
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgb(227, 227, 227); FIX THIS!!!!!!!!!!!!!!!!!*/
+    object-fit: cover;
+}
+
+#landing-meet-container {
+    display: flex;
+    padding: 0px 50px;
+    gap: 50px;
+    max-width: 1200px;
+}
+
+#landing-stat-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#landing-stat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid var(--navBorder);
+    border-radius: 10px;
+}
+
+.stat-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-bar-wrapper {
+    background: rgb(216, 137, 179);
+    width: 80%;
+    height: 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.114);
+}
+
+.stat-bar {
+    border-radius: 50px;
+    background: #ff9ed5;
+    height: 100%;
+}
+
+#cuteness-bar {
+    width: 95%;
+}
+
+#naughtiness-bar {
+    width: 80%;
+}
+
+#smarts-bar {
+    width: 70%;
+}
+
+#landing-meet-container p {
+    font-size: 20px;
+    color: var(--navText);
 }
 
 #landing-cta-container {
@@ -72,9 +136,40 @@
     color: var(--navText);
 }
 
-#landing-meet-ricky img {
-    width: clamp(200px, 80%, 500px);
-    border-radius: 5px;
+#secondary-cta-container {
+    display: flex;
+    background: var(--navText);
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+#secondary-cta-container p {
+    color: white;
+}
+
+#secondary-cta-container a button {
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 99px;
+    cursor: pointer;
+    border: 2px solid var(--navText);
+    background-color: rgb(255, 145, 218);
+    color: var(--navText);
+    transition: all 0.15s;
+}
+
+#secondary-cta-container a button:hover {
+    border: 2px solid white;
+    background-color: var(--navText);
+    color: white;
+}
+
+#cta-arrow {
+    transform: rotate(90deg);
+    max-width: 60px;
+    object-fit: cover;
 }
 
 #slogan {
@@ -210,5 +305,19 @@
     
     #landing-b7 {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #cta-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #landing-meet-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
