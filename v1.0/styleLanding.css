@@ -97,6 +97,10 @@
     width: 70%;
 }
 
+#agility-bar {
+    width: 95%;
+}
+
 #landing-meet-container p {
     font-size: 20px;
     color: var(--navText);
