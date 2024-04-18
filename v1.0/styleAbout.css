@@ -1,6 +1,7 @@
 #about-body-text {
     width: 100%;
     padding: 50px 0px;
+    z-index: 1;
 }
 
 #about-body-text div {
@@ -24,6 +25,7 @@
     margin-top: 110px;
     min-height: 30vh;
     border-bottom: 1px solid var(--navBorder);
+    z-index: 1;
 }
 
 #about-ricky-img {
