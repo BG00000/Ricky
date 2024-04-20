@@ -41,7 +41,7 @@ body {
     justify-content: space-around;
     flex: 1;
     max-width: 800px;
-    z-index: 99;
+    
 }
 
 .footer-links {
