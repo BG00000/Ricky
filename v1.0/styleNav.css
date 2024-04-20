@@ -36,7 +36,7 @@
     align-items: center;
     border-bottom: 1px solid var(--navBorder);
     padding: 0px 15px;  
-    z-index: 1;
+    z-index: 99;
 }
 
 
