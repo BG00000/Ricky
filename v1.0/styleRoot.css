@@ -3,7 +3,7 @@
     --navBarBgc: rgb(255, 255, 255);
     --navText: rgb(29, 29, 31);
     --navBorder: rgb(209, 209, 209);
-    --themeBlue: rgb(255, 86, 199);
+    --themeBlue: rgb(224, 86, 199);
     --lightGrey1: rgb(245, 245, 245);
 
     --maxWidth: 1200px;
@@ -25,6 +25,7 @@ body {
     align-items: center;
     word-wrap: break-word;
 }
+
 
 .emph_blue {
     color: var(--themeBlue);

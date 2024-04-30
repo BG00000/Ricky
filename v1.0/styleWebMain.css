@@ -64,6 +64,32 @@ body {
     font-size: 20px;
 }
 
+#socials-container {
+    min-height: 80px;
+    background-color: var(--navText);
+}
+
+#socials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.fa {
+    padding: 10px;
+    width: 50px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
 @media screen and (max-width: 550px) {
     #footer {
         flex-direction: column;
