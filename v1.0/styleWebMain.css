@@ -84,10 +84,12 @@ body {
     text-align: center;
     text-decoration: none;
     color: white;
+    transition: color 0.15s;
 }
 
-
-
+.fa:hover {
+    color: var(--themeBlue);
+}
 
 
 @media screen and (max-width: 550px) {

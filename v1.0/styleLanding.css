@@ -92,7 +92,6 @@
 
 .stat-bar {
     border-radius: 50px;
-    /* background-color: rgb(255, 158, 213); */
     background-image: linear-gradient(to right, rgb(255, 145, 218), rgb(255, 162, 75));
     height: 100%;
 }
@@ -331,7 +330,6 @@
     filter: blur(100px);
 }
 
-
 @keyframes animate-prompt {
     from {bottom: 50px;}
     to {bottom: 30px;}
@@ -351,7 +349,6 @@
     #landing-b7 {
         display: none;
     }
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -365,4 +362,16 @@
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media screen and (max-width: 550px) {
+    #landing-stat-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+.test {
+    background-color: red;
+    height: 50px;
+    width: 50px;
 }
