@@ -12,12 +12,12 @@
 }
 
 #nav-bar-area {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--navBarBgc); /*fix opacity blur */
     display: flex;
     min-height: 70px;
     justify-content: center;
     padding: 0px 15px 0px 15px;
-    border-bottom: 1px solid var(--navBorder);
+    border-bottom: 2px solid var(--navBorder);
 }
 
 #nav-bar {
@@ -31,14 +31,16 @@
 }
 
 #explore-bar-area {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--navBarBgc);
     top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid var(--navBorder);
+    border-bottom: 2px solid transparent;
     padding: 0px 15px;  
     z-index: 99;
+
+    border-image: linear-gradient(to right, var(--prettyPink), var(--ornateOrange)) 30;
 }
 
 
@@ -55,7 +57,7 @@
     display: none;
     background-color: var(--navText);
     border: none;
-    color: white;
+    color: white; /*update to var()*/
     padding: 5px;
     margin: 10px 0px;
     width: 100%;
@@ -79,18 +81,18 @@
 
 #explore-expand div:first-child {
     font-size: 45px;
-    color: rgba(255, 73, 185, 0.822);
+    color: var(--prettyPink);
     min-width: fit-content;
 }
 
 #explore-expand div:last-child {
     font-size: 20px;
-    color: rgb(112, 112, 114); /*update colors to var()*/
+    color: var(--navText);
 }
 
 
 #explore-pill:hover {
-    background-color: var(--themeBlue);
+    background-color: var(--prettyPink);
 }
 
 #explore-bar-bottom p a {
@@ -120,13 +122,13 @@
 #right-box ul li a{
     text-decoration: none;
     font-size: 14px;
-    color: rgb(0, 0, 0);
+    color: var(--navText);
 
     transition: color 0.15s;
 }
 
 #right-box ul li a:hover {
-    color: rgb(89, 89, 89);
+    color: var(--prettyPink);
 }
 
 #right-box ul li {

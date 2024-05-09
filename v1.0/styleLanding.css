@@ -10,13 +10,12 @@
 }
 
 #scroll-prompt div {
-    border: solid var(--navBorder);
+    border: solid var(--prettyPink);
     border-width: 0 4px 4px 0;
     height: 20px;
     width: 20px;
     transform: rotate(45deg);
     transition: all 1s;
-    mix-blend-mode: multiply;
 }
 
 .transition-prompt {
@@ -38,7 +37,7 @@
     width: clamp(300px, 40%, 500px);
     height: fit-content;
     border-radius: 5px;
-    /* box-shadow: 0 0 10px rgb(227, 227, 227); FIX THIS!!!!!!!!!!!!!!!!!*/
+    /* box-shadow: 0 0 10px rgb(227, 227, 227); FIX THIS!!!!!!!!!!!!!!!!! */
     object-fit: cover;
 }
 
@@ -56,11 +55,8 @@
     flex: 1;
     flex-direction: column;
     gap: 50px;
-
-    background-color: rgba(255, 255, 255, 0.438);
     border-radius: 10px;
     padding: 10px;
-    border: 2px solid white;
 }
 
 
@@ -92,7 +88,7 @@
 
 .stat-bar {
     border-radius: 50px;
-    background-image: linear-gradient(to right, rgb(255, 145, 218), rgb(255, 162, 75));
+    background-image: linear-gradient(to right, var(--prettyPink), var(--ornateOrange));
     height: 100%;
 }
 
@@ -121,24 +117,25 @@
     margin-top: 100px;
     display: flex;
     gap: 30px;
-    padding: 40px;
-    border: 2px solid rgba(255, 255, 255, 0.425);
+    padding: 20px;
+    border: 2px solid var(--prettyPink);
     align-items: center;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.347);
-    width: 50%;
+    border-radius: 99px;
+    background: var(--navBarBgc);
     justify-content: space-between;
     z-index: 1;
+    color: var(--navText);
+    box-shadow: 40px 40px 0 var(--prettyPink);
 }
 
 #landing-cta-container button {
     padding: 10px 20px;
-    background-color: var(--navText);
-    border: 2px solid var(--navText);
-    border-radius: 5px;
-    color: white;
+    border: 2px solid var(--prettyPink);
+    border-radius: 99px;
     transition: color 0.15s, background-color 0.15s;
     font-size: 15px;
+    background-color: var(--mainContent);
+    color: var(--navText);
 }
 
 #landing-cta-container p {
@@ -148,23 +145,23 @@
 
 #landing-cta-container button:hover {
     cursor: pointer;
-    background: transparent;   
+    background: var(--prettyPink);   
     color: var(--navText);
 }
 
 #secondary-cta-container {
     display: flex;
-    background: var(--navText);
+    background: var(--mainContentDark);
     justify-content: space-between;
     padding: 10px 20px;
     border-radius: 10px;
     align-items: center;
 
-    box-shadow: 5px 5px 0 rgb(255, 145, 218);
+    box-shadow: 15px 15px 0 var(--prettyPink);
 }
 
 #secondary-cta-container p {
-    color: white;
+    color: var(--navText);
 }
 
 #secondary-cta-container a button {
@@ -173,7 +170,7 @@
     border-radius: 99px;
     cursor: pointer;
     border: 2px solid var(--navText);
-    background-color: rgb(255, 145, 218);
+    background-color: transparent;
     color: var(--navText);
     transition: all 0.15s;
 }
@@ -181,7 +178,7 @@
 #secondary-cta-container a button:hover {
     border: 2px solid white;
     background-color: var(--navText);
-    color: white;
+    color: var(--mainContentDark);
 }
 
 #cta-arrow {
@@ -191,144 +188,11 @@
 }
 
 #slogan {
-    mix-blend-mode: color-burn;
+    color: var(--prettyPink);
     padding: 10px;
 }
 
-.meet-ricky-dec {
-    position: absolute;
-    width: 2800px;
-    transform: rotate(-45deg);
-}
 
-#dec1 {
-    bottom: 1000px;
-    border-top: 3px solid rgba(101, 163, 255, 0.137);
-}
-
-#dec2 {
-    bottom: 1100px;
-    border-top: 3px solid rgba(101, 142, 255, 0.336);
-}
-
-#dec3 {
-    bottom: 1200px;
-    border-top: 3px solid rgba(124, 101, 255, 0.281);
-}
-
-#dec4 {
-    bottom: 1300px;
-    border-top: 3px solid rgba(255, 101, 234, 0.349);
-}
-
-#dec5 {
-    bottom: 1400px;
-    border-top: 3px solid rgba(255, 84, 84, 0.26);
-}
-
-#dec6 {
-    bottom: 1500px;
-    border-top: 3px solid rgba(255, 110, 73, 0.308);
-}
-
-#landing-b1 {
-    top: 300px;
-    left: 10%px;
-}
-
-#landing-b2 {
-    top: 10%;
-    right: 30px;
-}
-
-#landing-b3 {
-    top: 200px;
-    right: 400px;
-}
-
-#landing-b4 {
-    top: 430px;
-    left: 450px;
-}
-
-#landing-b5 {
-    top: 430px;
-    left: 300px;
-}
-
-#landing-b6 {
-    top: -50px;
-    left: 30%;
-}
-
-#landing-b7 {
-    top: 200px;
-    left: 1%;
-}
-
-#landing-b8 {
-    top: 300px;
-    right: 10%;
-}
-
-#landing-b9 {
-    top: 300px;
-    right: 50%;
-}
-
-.bg-ball-1 {
-    background: rgba(251, 124, 255, 0.555);
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(100px);
-}
-
-.bg-ball-2 {
-    background: rgba(255, 83, 183, 0.507);
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(100px);
-}
-
-.bg-ball-3 {
-    background: rgba(255, 223, 164, 0.541);
-    height: 30vw;
-    width: 30vw;
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(100px);
-}
-
-.bg-ball-4 {
-    background: rgba(252, 133, 133, 0.384);
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(100px);
-}
-
-.bg-ball-5 {
-    background: rgba(255, 18, 109, 0.247);
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(100px);
-}
-
-.bg-ball-6 {
-    background: rgba(255, 212, 18, 0.247);
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    border-radius: 999px;
-    filter: blur(100px);
-}
 
 @keyframes animate-prompt {
     from {bottom: 50px;}

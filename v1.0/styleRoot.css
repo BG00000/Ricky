@@ -1,12 +1,18 @@
 :root {
-    --mainContent: rgb(255, 255, 255);
-    --navBarBgc: rgb(255, 255, 255);
-    --navText: rgb(29, 29, 31);
-    --navBorder: rgb(209, 209, 209);
-    --themeBlue: rgb(224, 86, 199);
-    --lightGrey1: rgb(245, 245, 245);
+    --mainContent: rgba(29, 29, 31, 0);
+    --mainContentDark: rgb(11, 11, 12);
+
+    --prettyPink: rgb(255, 93, 225);
+    --ornateOrange: rgb(255, 162, 75);
 
     --maxWidth: 1200px;
+
+    /*unique to nav-bar since it has an opacity property*/
+    --navBarBgc: rgba(16, 16, 20, 0.431);
+    /*^^^*/
+
+    --navText: rgb(234, 234, 238);
+    --navBorder: rgb(11, 11, 13);
 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -25,15 +31,6 @@ body {
     word-wrap: break-word;
 }
 
-
-.emph_blue {
-    color: var(--themeBlue);
-}
-
-.emph_white {
-    color: var(--mainContent);
-}
-
-.emph_colour {
-    mix-blend-mode: color-burn;
+.emph_1 {
+    color: var(--prettyPink);
 }

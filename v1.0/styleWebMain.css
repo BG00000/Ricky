@@ -1,7 +1,26 @@
 body {
-    background-color: var(--mainContent);
     overflow-x: hidden;
+
+     /* 
+     ~ CREDIT ~
+     TITLE: DARK MODE MASTODON PATTERN
+     AUTHOR: TEMANI AFIF 
+     */
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+    /*^^^^*/
 }
+
 
 #content-area {
     background-color: var(--mainContent);
@@ -33,7 +52,8 @@ body {
 
 #footer-area {  
     padding: 50px 0px;
-    border-top: 1px solid var(--navBorder);
+    border-top: 2px solid var(--navBorder);
+    background-color: var(--navBarBgc);
 }
 
 #footer {
@@ -52,7 +72,7 @@ body {
 
 .footer-links a {
     text-decoration: none;
-    color: var(--themeBlue);
+    color: var(--prettyPink);
 }
 
 .footer-links a:hover {
@@ -66,7 +86,7 @@ body {
 
 #socials-container {
     min-height: 80px;
-    background-color: var(--navText);
+    background-color: var(--mainContentDark);
 }
 
 #socials-wrapper {
@@ -77,18 +97,16 @@ body {
     z-index: 1;
 }
 
-.fa {
-    padding: 10px;
-    width: 50px;
-    font-size: 1em;
+.fa-brands {
+    padding: 20px 10px;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: var(--navText);
     transition: color 0.15s;
 }
 
-.fa:hover {
-    color: var(--themeBlue);
+.fa-brands:hover {
+    color: var(--prettyPink);
 }
 
 

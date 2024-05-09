@@ -25,8 +25,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
       <!--GSAP-->
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
       <p id="loading-animation"></p>
@@ -135,19 +133,11 @@
          </section>
          <!--main content components-->
          <div id="body-area">
-            <div class="bg-ball-1" id="landing-b1"></div>
-            <div class="bg-ball-2" id="landing-b2"></div>
-            <div class="bg-ball-3" id="landing-b3"></div>
-            <div class="bg-ball-4" id="landing-b4"></div>
-            <div class="bg-ball-5" id="landing-b5"></div>
-            <div class="bg-ball-6" id="landing-b6"></div>
-            <div class="bg-ball-2" id="landing-b7"></div>
-            <div class="bg-ball-1" id="landing-b8"></div>
-            <div class="bg-ball-1" id="landing-b9"></div>
             <div class="landing-section" id="landing-slogan">
+
                <h1 class="body-main-text" id="slogan">A website for everything Ricky</h1>
                <div id="landing-cta-container">
-                  <p>But who's <span class="emph_colour">Ricky?</span></p>
+                  <p>But who's Ricky?</p>
                   <a href="./gallery.html"><button>Explore the gallery</button></a>
                </div>
                <div id="scroll-prompt">
@@ -155,18 +145,6 @@
                </div>
             </div>
             <div class="landing-section" id="landing-meet-ricky">
-
-               <!--Background components-->
-
-               <div class="meet-ricky-dec" id="dec1"></div>
-               <div class="meet-ricky-dec" id="dec2"></div>
-               <div class="meet-ricky-dec" id="dec3"></div>
-               <div class="meet-ricky-dec" id="dec4"></div>
-               <div class="meet-ricky-dec" id="dec5"></div>
-               <div class="meet-ricky-dec" id="dec6"></div>
-
-               <!--Background components-->
-
 
                <p class="body-main-text">Meet Ricky!</p>
                <div id="landing-meet-container">
@@ -230,18 +208,10 @@
             </div>
             <div class="landing-section" id="socials-container">
                <div id="socials-wrapper">
-
-                  <!-- Pressing FB button will prompt you to login, after logging in you are directed to the FB homepage, must press the button again to share -->
-                  <a class="fb-share-button fb-xfbml-parse-ignore fa fa-facebook fa-lg" data-href="https://stuweb.cecs.anu.edu.au/~u7436429/" data-layout="" data-size="" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstuweb.cecs.anu.edu.au%2F%7Eu7436429%2F&amp;src=sdkpreparse">
-                  
-
-                  
-
-                  <a href="#" class="fa fa-instagram fa-lg"></a>
-                  <a href="#" class="fa fa-twitter fa-lg"></a>
-                  <a href="#" class="fa fa-reddit fa-lg"></a>
-
-                  
+                  <a target="_blank" class="facebook"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                  <a target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                  <a target="_blank" class="twitter"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                  <a target="_blank" class="reddit"><i class="fa-brands fa-reddit fa-lg"></i></a>
                </div>
             </div>
          </div>
@@ -252,5 +222,8 @@
       <script src="scriptMain.js"></script>
       <script src="scriptLanding.js"></script>
       <script src="GSAP.js"></script>
+
+      <script src="share.js"></script>
+      <script src="https://kit.fontawesome.com/832f375b76.js" crossorigin="anonymous"></script>
    </body>
 </html>
