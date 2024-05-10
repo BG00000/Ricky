@@ -24,7 +24,7 @@
 #about-slogan {
     margin-top: 110px;
     min-height: 30vh;
-    border-bottom: 1px solid var(--navBorder);
+    border-bottom: 2px solid var(--navBorder);
     z-index: 1;
 }
 

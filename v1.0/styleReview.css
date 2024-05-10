@@ -1,6 +1,6 @@
 #review-form {
     padding: 50px 20px;
-    border-top: 1px solid var(--navBorder);
+    border-top: 2px solid var(--navBorder);
     border-bottom: none;
     width: 100%;
     display: flex;
@@ -28,10 +28,11 @@
 
 .form-section legend {
     font-size: 40px;
+    color: var(--navText);
 }
 
 .subtle-nudge {
-    color: var(--navBorder);
+    color: var(--prettyPink);
     font-size: 20px;
 }
 
@@ -69,16 +70,21 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    background-color: var(--prettyPink);
+}
+
+#form-submit-btn:hover {
+    opacity: 0.8;
 }
 
 #form-reset-btn {
-    border: 1px solid var(--navBorder);
+    border: 2px solid var(--navBorder);
     padding: 10px 5px;
     background-color: transparent;
 }
 
 #form-reset-btn:hover {
-    background-color: rgb(246, 246, 246);
+    background-color: var(--navBorder);
 }
 
 #submit-message {
@@ -88,8 +94,8 @@
     border-radius: 30px;
     gap: 15px;
     padding: 20px;
-    border: 1px solid var(--themeBlue);
-    color: var(--themeBlue);
+    border: 1px solid var(--prettyPink);
+    color: var(--prettyPink);
 }
 
 #submit-message img {
@@ -99,7 +105,7 @@
 .text-input {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid var(--navBorder);
+    border: 2px solid var(--navBorder);
     width: 80%;
     font-size: 17px;
 }
