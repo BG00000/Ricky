@@ -94,20 +94,18 @@
     border-radius: 30px;
     gap: 15px;
     padding: 20px;
-    border: 1px solid var(--prettyPink);
+    border: 2px solid var(--prettyPink);
     color: var(--prettyPink);
-}
-
-#submit-message img {
-    height: 23px;
 }
 
 .text-input {
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid var(--navBorder);
+    border: 2px solid var(--navText);
     width: 80%;
     font-size: 17px;
+    background-color: var(--mainContent);
+    color: var(--navText);
 }
 
 #client-details {

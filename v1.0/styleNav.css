@@ -55,7 +55,7 @@
 
 #explore-pill {
     display: none;
-    background-color: var(--navText);
+    background-color: var(--mainContentDark);
     border: none;
     color: white; /*update to var()*/
     padding: 5px;
@@ -152,6 +152,11 @@
 #left-box a {
     text-decoration: none;
     color: var(--navText);
+    transition: color 0.15s;
+}
+
+#left-box a:hover {
+    color: var(--prettyPink);
 }
 
 #burger-menu {
