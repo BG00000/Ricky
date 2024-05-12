@@ -10,15 +10,30 @@
 }
 
 .nandn-standing {
-    padding: 20px;
     color: var(--navText);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    border: 2px solid var(--prettyPink);
+}
+
+.nandn-standing p {
+    background-color: var(--mainContentDark);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
     border-radius: 10px;
 }
+
+.nandn-standing p:first-child {
+    font-size: 25px;
+}
+
+.nandn-standing p:last-child {
+    font-size: 25px;
+}
+
 
 #naughty-side,
 #nice-side {
@@ -43,6 +58,14 @@
     color: var(--naughtyRed);
 }
 
+.html-lost {
+    color: var(--naughtyRed);
+}
+
+.html-gain {
+    color: var(--niceGreen);
+}
+
 .naughty-entry,
 .nice-entry {
     background-color: var(--navBarBgc);
@@ -64,4 +87,12 @@
 
 .nandn-title {
     font-size: 20px;
+}
+
+.nn-title {
+    font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--navText);
 }

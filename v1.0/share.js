@@ -1,5 +1,5 @@
 const link = encodeURI(window.location.href)
-const msg = encodeURIComponent("Check out Ricky!")
+const msg = encodeURIComponent("Check out this page on Ricky's website!")
 
 const facebook = document.querySelector(".facebook")
 facebook.href = `https://www.facebook.com/share.php?u=${link}`
