@@ -1,0 +1,79 @@
+.landd-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ld-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.ld-title {
+    color: var(--navText);
+    font-size: clamp(20px, 2vw, 40px);
+}
+
+.ld-entry {
+    background-color: var(--mainContentDark);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    box-shadow: 5px 5px var(--burntBlack);
+}
+
+.ld-entry p {
+    color: var(--navText);
+    font-size: 20px;
+}
+
+.likes-section {
+    padding-right: 20px;
+}
+
+.dislikes-section {
+    padding-left: 20px;
+}
+
+.ld-level-wrapper {
+    width: 100%;
+    background-color: var(--burntBlack);
+    height: 20px;
+    border-radius: 99px;
+
+}
+
+.ld-level {
+    height: 100%;
+    border-radius: 99px;
+    background-image: linear-gradient(to right, var(--prettyPink), var(--ornateOrange));
+}
+
+.l1 {
+    width: 95%;
+}
+
+.l2 {
+    width: 80%;
+}
+
+.l3 {
+    width: 75%;
+}
+
+.l4 {
+    width: 50%;
+}
+
+.l5 {
+    width: 30%;
+}
+
+.l6 {
+    width: 10%;
+}

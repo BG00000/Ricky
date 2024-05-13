@@ -1,9 +1,11 @@
 :root {
     --mainContent: rgba(29, 29, 31, 0);
     --mainContentDark: rgb(11, 11, 12);
+    --mainContentLight: rgb(30, 32, 37);
 
     --prettyPink: rgb(255, 93, 225);
     --ornateOrange: rgb(255, 162, 75);
+    --burntBlack: rgb(0, 0, 0);
 
     --maxWidth: 1200px;
 
