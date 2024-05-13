@@ -48,3 +48,9 @@ function handleExplorePill() {
 }
 
 handleExplorePill()
+
+function handleThemes() {
+   document.documentElement.classList.add("light-theme")
+}
+
+handleThemes()
