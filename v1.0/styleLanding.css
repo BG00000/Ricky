@@ -128,13 +128,19 @@
     box-shadow: 40px 40px 0 var(--prettyPink);
 }
 
-#landing-cta-container button {
+.primary-cta-button {
     padding: 10px 20px;
     border: 2px solid var(--prettyPink);
     border-radius: 99px;
     transition: color 0.15s, background-color 0.15s;
     font-size: 15px;
     background-color: var(--mainContent);
+    color: var(--navText);
+    text-decoration: none;
+}
+
+.primary-cta-button:hover {
+    background-color: var(--prettyPink);
     color: var(--navText);
 }
 
@@ -143,11 +149,6 @@
     font-size: clamp(19px, 2vw, 30px);
 }
 
-#landing-cta-container button:hover {
-    cursor: pointer;
-    background: var(--prettyPink);   
-    color: var(--navText);
-}
 
 #secondary-cta-container {
     display: flex;
@@ -164,21 +165,20 @@
     color: var(--navText);
 }
 
-#secondary-cta-container a button {
+.secondary-cta-button {
     font-size: 17px;
     padding: 10px 20px;
     border-radius: 99px;
     cursor: pointer;
-    border: 2px solid var(--navText);
+    border: 2px solid var(--prettyPink);
     background-color: transparent;
     color: var(--navText);
     transition: all 0.15s;
+    text-decoration: none;
 }
 
-#secondary-cta-container a button:hover {
-    border: 2px solid white;
-    background-color: var(--navText);
-    color: var(--mainContentDark);
+.secondary-cta-button:hover {
+    background-color: var(--prettyPink);
 }
 
 #cta-arrow {
