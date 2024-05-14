@@ -1,5 +1,5 @@
 
-:root {
+html[data-theme="dark"] {
     --mainContent: rgba(29, 29, 31, 0);
     --mainContentDark: rgb(11, 11, 12);
     --mainContentLight: rgb(30, 32, 37);
@@ -20,6 +20,8 @@
     --naughtyRed: rgb(255, 115, 115);
     --niceGreen: rgb(109, 255, 109);
 
+    --themeSwitchBgc: rgba(16, 16, 20, 0.431);
+
     --s: 50px;
     --c: #191b22;
     --_s: calc(2*var(--s)) calc(2*var(--s));
@@ -28,13 +30,13 @@
 }
 
 
-.light-theme {
+html[data-theme="light"] {
     --mainContent: rgba(29, 29, 31, 0);
     --mainContentDark: rgb(255, 212, 247);
     --mainContentLight: rgb(203, 203, 203);
 
     --prettyPink: rgb(255, 144, 235);
-    --ornateOrange: rgb(255, 144, 235);
+    --ornateOrange: rgb(255, 145, 200);
     --burntBlack: rgb(106, 106, 106);
 
     --maxWidth: 1200px;
@@ -44,10 +46,12 @@
     /*^^^*/
 
     --navText: rgb(29, 29, 37);
-    --navBorder: rgb(212, 133, 198);
+    --navBorder: rgb(207, 103, 188);
 
-    --naughtyRed: rgb(214, 0, 0);
-    --niceGreen: rgb(71, 190, 71);
+    --naughtyRed: rgb(194, 102, 255);
+    --niceGreen: rgb(255, 75, 180);
+
+    --themeSwitchBgc: rgb(255, 200, 245);
 
     --s: 50px;
     --c: #ffffff;
