@@ -233,6 +233,19 @@
     border-radius: 99px;
 }
 
+.print-option {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0px 10px;
+    color: var(--prettyPink);
+}
+
+.print-option i:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 
 
 @media screen and (max-width: 750px) {

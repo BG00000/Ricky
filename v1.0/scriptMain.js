@@ -88,3 +88,20 @@ function handleThemes() {
 handleThemes()
 
 //cookies - JSON - 
+
+function handleCSSFiles() {
+   const landingCSSLink = document.getElementById("landingCSSLink")
+   const printBtn = document.getElementById("print-btn")
+
+   printBtn.addEventListener("click", () => {
+      if(landingCSSLink.href = "styleLanding.css") {
+         landingCSSLink.setAttribute("href", "styleLandingAlt.css")
+         console.log("hello")
+      } else if (landingCSSLink.href = "styleLandingAlt.css") {
+         landingCSSLink.setAttribute("href", "styleLanding.css")
+         console.log("hello22")
+      }
+   })
+}
+
+handleCSSFiles()
