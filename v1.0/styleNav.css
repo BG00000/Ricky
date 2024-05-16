@@ -43,10 +43,9 @@
     border-image: linear-gradient(to right, var(--prettyPink), var(--ornateOrange)) 30;
 }
 
-
 #explore-bar-bottom {
     display: grid;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(7, auto);
     width: 100%;
     max-width: 1000px;
     height: 40px;
