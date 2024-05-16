@@ -45,23 +45,11 @@
 
 #explore-bar-bottom {
     display: grid;
-    grid-template-columns: repeat(7, auto);
+    grid-template-columns: repeat(4, auto);
     width: 100%;
     max-width: 1000px;
     height: 40px;
     align-items: center;
-}
-
-#explore-pill {
-    display: none;
-    background-color: var(--mainContentDark);
-    border: none;
-    color: white; /*update to var()*/
-    padding: 5px;
-    margin: 10px 0px;
-    width: 100%;
-    border-radius: 50px;
-    cursor: pointer;
 }
 
 #explore-expand {
@@ -87,11 +75,6 @@
 #explore-expand div:last-child {
     font-size: 20px;
     color: var(--navText);
-}
-
-
-#explore-pill:hover {
-    background-color: var(--prettyPink);
 }
 
 #explore-bar-bottom p a {
@@ -245,14 +228,3 @@
     cursor: pointer;
 }
 
-
-
-@media screen and (max-width: 750px) {
-    #explore-bar-bottom {
-        display: none;
-    }
-
-    #explore-pill {
-        display: inline;
-    }
-}

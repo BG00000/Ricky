@@ -13,7 +13,7 @@
       <link rel="stylesheet" href="styleRoot.css">
       <link rel="stylesheet" href="styleLanding.css">
       <link rel="stylesheet" href="styleGallery.css">
-      <link rel="stylesheet" href="styleNaughtyAndNice.css">
+      <link id="naughtyAndNiceCSSLink" rel="stylesheet" href="styleNaughtyAndNice.css">
 
       <!-- fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,9 @@
       <!-- fonts -->
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="styleAlt.css">
+
 
    </head>
    <body>
@@ -48,24 +51,16 @@
                      </label>
                   </div>
                   <div class="print-option">
-                     <i class="fa-solid fa-print fa-2xl" id="print-btn"></i>
+                     <i class="fa-solid fa-wand-magic-sparkles fa-2xl" id="print-btn"></i>
                   </div>
                </div>
             </div>
             <div id="explore-bar-area">
-               <button id="explore-pill">
-               Explore
-               </button>
-               <!--is the <p> tag neccessary? Semantically?-->
-               <!-- I can't get the text-decoration: none; or general navBar styles to work when uploading to stuWeb-->
                <div id="explore-bar-bottom">
                   <p><a id="naughty-and-nice-btn" class="nav-hover-element" href="naughtyAndNice.html" >Naughty & Nice</a></p>
                   <p><a id="likes-and-dislikes-btn" class="nav-hover-element" href="likesAndDislikes.html" >Likes & Dislikes</a></p>
                   <p><a id="vitals-btn" class="nav-hover-element" href="vitals.html" >Vitals</a></p>
                   <p><a id="gallery-btn" class="nav-hover-element" href="./gallery.html" >Gallery</a></p>
-                  <p><a id="interview-btn" class="nav-hover-element" href="interview.html" >Interview</a></p>
-                  <p><a id="pedigree-btn" class="nav-hover-element" href="pedigree.html" >Pedigree</a></p>
-                  <p><a id="friends-btn" class="nav-hover-element" href="friends.html" >Friends</a></p>
                </div>
                <div id="explore-expand">
                   <div id="naughty-and-nice-btn-expand" class="explore-expand-inner">
@@ -98,30 +93,6 @@
                      </div>
                      <div>
                         <p>Explore a plethora of candid <span class="emph_1">Ricky</span> portraits</p>
-                     </div>
-                  </div>
-                  <div id="interview-btn-expand" class="explore-expand-inner">
-                     <div>
-                        <p>Interview</p>
-                     </div>
-                     <div>
-                        <p>Does <span class="emph_1">Ricky</span> like his food cold or warm? Find out here</p>
-                     </div>
-                  </div>
-                  <div id="pedigree-btn-expand" class="explore-expand-inner">
-                     <div>
-                        <p>Pedigree</p>
-                     </div>
-                     <div>
-                        <p>Does <span class="emph_1">Ricky</span> have a royal lineage?</p>
-                     </div>
-                  </div>
-                  <div id="friends-btn-expand" class="explore-expand-inner">
-                     <div>
-                        <p>Friends</p>
-                     </div>
-                     <div>
-                        <p>Explore <span class="emph_1">Ricky's</span> friends (not what you may expect)</p>
                      </div>
                   </div>
                </div>
@@ -202,6 +173,8 @@
                      <p class="footer-headings">Behind the scenes</p>
                      <p><a href="assignment.html">Assignment</a></p>
                      <p><a href="sourcelog.html">Source Log</a></p>
+                     <p><a href="aboutMySite.html">About my site</a></p>
+
                   </div>
                </div>
                <!-- <div class="bg-ball-1" id="footer-b1"></div>
@@ -217,6 +190,25 @@
             </div>
          </div>
       </section>
+
+      <script>
+
+         // I have to put the JS here (just for the print option)
+         // and not in its own file so that I don't get reference 
+         // errors when declaring other CSS files in the same scope
+
+         const printBtn = document.getElementById("print-btn")
+
+         const naughtyAndNiceCSSLink = document.getElementById("naughtyAndNiceCSSLink")
+
+         printBtn.addEventListener("click", () => {
+            if (naughtyAndNiceCSSLink.getAttribute("href") === "styleNaughtyAndNice.css") {
+               naughtyAndNiceCSSLink.setAttribute("href", "styleAlt.css")
+            } else {
+               naughtyAndNiceCSSLink.setAttribute("href", "styleNaughtyAndNice.css")
+            }
+         })
+      </script>
 
       <script src="scriptMain.js"></script>
       <script src="scriptGallery.js"></script>

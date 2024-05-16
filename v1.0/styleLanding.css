@@ -234,9 +234,3 @@
         grid-template-columns: 1fr;
     }
 }
-
-.test {
-    background-color: red;
-    height: 50px;
-    width: 50px;
-}
