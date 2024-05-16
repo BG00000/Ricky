@@ -80,5 +80,6 @@ body {
 }
 
 .emph_2 {
-    color: rgba(255, 255, 255, 0.51);
+    color: var(--navText);
+    opacity: 0.4;
 }
